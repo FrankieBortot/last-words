@@ -1,3 +1,7 @@
+.gradient-pink {
+  background-image: linear-gradient(-45deg, #f7b6ff, #ffe4e4);
+}
+
 .container {
   max-width: 1000px;
   margin:auto;
@@ -7,22 +11,36 @@
   height: 100vh;
 }
 
-.body {
-
-}
-
-.title {
+.chapter {
   display: flex;
-  font-family: 'Helvetica', sans-serif;
-  font-size: 25pt;
-  font-weight: medium;
+  font-family: 'Merienda', sans-serif;
+  font-size: 60pt;
+  font-weight: 700;
   text-transform: uppercase;
 
-  color: #c4c4c4;
-  height: 80%;
+  color: #fff;
+  text-shadow: 4px 4px 0px rgba(179, 0, 181, 1), 8px 8px 0px rgba(0, 26, 189, 1);
+  height: 40%;
 
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+}
+
+.month {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30pt;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 1pt;
+
+  padding-top: 30px;
+
+  color: #001abd;
+  height: 40%;
+
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .scrollup {
@@ -30,123 +48,205 @@
   height: 20%;
   align-items: center;
   justify-content: center;
+
 }
 
-.mail-box {
+.mail-text {
   font-family:'Lucida console';
-  font-size: 18pt;
-
-  line-height: 32pt;
   color: #444444;
-
 
   border-style: solid;
   border-width: 1px;
   border-color: #b0b0b0;
   border-radius: 4px;
-
-  padding: 16px 24px;
-  margin: 10px 20px;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-
-.balloon-frankie {
-  display: block;
-  text-align: right;
-}
-
-.balloon-her {
-  display: block;
-}
-
-
-.chat {
-  background-color: #DED6CF;
-  padding: 5px 0px;
-}
-
-.frankie-sms {
-  background-color: #dcfcca;
-  border-radius: 12px;
-}
-
-.her-sms {
-  background-color: #ffffff;
-  border-radius: 12px;
-}
-
-.speech {
-  background-color: #fff;
-  padding: 10px 0px;
-}
-
-.frankie-speech {
-  background-color: #ffffff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #ccdad3;
-  border-radius: 20px;
-
-}
-
-.her-speech {
-  background-color: #ffffff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e0cdcd;
-  border-radius: 20px;
 }
 
 .people-text {
-  font-family: 'Raleway', sans-serif;
+font-family: 'Raleway', sans-serif;
 font-weight: 500;
 font-size: 18pt;
 line-height: 32pt;
-padding: 10px 20px;
-margin: 5px 20px;
-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.1);
-max-width: 60%;
-  }
+}
 
+.chat {
+    background-color: #ebebeb;
+    padding: 15px 8px;
+}
+
+.speech {
+  background-color: #d5f1ef;
+  padding: 15px 8px;
+}
+
+.row-frankie {
+      display: block;
+      text-align: right;
+}
+
+.balloon-frankie-speech {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 10px 20px;
+  margin: 12px 20px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 86, 131, 0.3);
+  max-width: 60%;
+}
+
+.balloon-frankie-speech:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid #fff;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #fff;
+  border-bottom: 20px solid transparent;
+  margin-left: 0px;
+  margin-top: -10px;
+}
+
+.balloon-frankie-sms {
+  display: inline-block;
+  background-color: #dcfcca;
+  border-radius: 16px;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  box-shadow: 0px 1px 3px 0px rgba(37, 60, 0, 0.3);
+  max-width: 60%;
+}
+
+.balloon-frankie-sms:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid #dcfcca;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #dcfcca;
+  border-bottom: 20px solid transparent;
+  margin-left: 0px;
+  margin-top: -10px;
+}
 
 .frankie {
   color: #003430;
   display: inline-block;
+  text-align: left;
+}
+
+.row.her {
+  display: block;
+}
+
+.balloon-her-speech {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 10px 20px;
+  margin: 12px 20px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 86, 131, 0.3);
+  max-width: 60%;
+}
+
+.balloon-her-speech:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid #fff;
+  border-top: 20px solid #fff;
+  border-bottom: 20px solid transparent;
+  margin-left: -40px;
+  margin-top: -10px;
+}
+
+.balloon-her-sms {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  box-shadow: 0px 1px 4px 0px rgba(37, 60, 0, 0.3);
+  max-width: 60%;
+}
+
+.balloon-her-sms:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid #fff;
+  border-top: 20px solid #fff;
+  border-bottom: 20px solid transparent;
+  margin-left: -40px;
+  margin-top: -10px;
 }
 
 .her {
-    color: #340a00;
-  }
-
-.crying {
-  color: transparent;
-  text-shadow: 0 0 2px rgba(0,0,0,0.5);
+  color: #340a00;
+  display: inline-block;
+  text-align: left;
 }
 
 .button {
   display: block;
-  background-color: #00504d;
+  background-color: #009ecf;
 
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14pt;
   color: white;
   line-height: 20pt;
+  letter-spacing: 1pt;
 
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
 
   padding: 15px 32px;
-  margin: 10px 20px;
-  border-radius: 8px;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.20);
+  margin: 40px auto;
+  border-radius: 50px;
+  box-shadow: 0 6px #006483;
+  width: 50%;
+  max-width: 500px;
+  }
+
+.button:hover {
+    box-shadow: 0 4px #006483;
+    top: 2px;
 }
 
-/* .button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.button:active {
+    box-shadow: 0 0 #006483;
+    top: 6px;
+}
+
+
+
+
+
+/*
+.button2 {
+  display: block;
+  background-color: #009ecf;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14pt;
+  color: white;
+  line-height: 20pt;
+  letter-spacing: 1pt;
+
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  padding: 15px 32px;
+  margin: 40px auto;
+  border-radius: 50px;
+  box-shadow: 0px 5px 20px 5px rgba(0, 150, 204, 0.72);
+  width: 50%;
+  max-width: 500px;
 } */
