@@ -177,8 +177,7 @@
 
 .container {
   max-width: 1000px;
-  margin: 0px 8px;
-
+  margin: auto;
 }
 
 .speech .container {
