@@ -5,19 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
-
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
+  <script src="script.js"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-
-  <title>LAST WORDS · Prologo</title>
+  <title>LAST WORDS · Prologo
+  </title>
 
 </head>
 
@@ -48,7 +46,7 @@
 
 
 
-  <section class="speech">
+  <section class="speech" id="part1" >
 
 
 
@@ -87,7 +85,7 @@
 
       <div class="line"></div>
 
-        <a class="continue text" href="/testdark.html">
+        <a onclick="reveal2()" href="#part2" class="continue text" >
 
           Prendi penna e taccuino
 
@@ -99,7 +97,7 @@
 
   </section>
 
-  <section class="sms">
+  <section class="sms"  id="part2" display="none">
 
 
     <div class="calendar">
@@ -234,7 +232,7 @@
 
       <div class="line"></div>
 
-        <a class="continue text" href="/testdark.html">
+        <a class="continue text" href="#part3" onclick="reveal('part3')">
 
           Prendi penna e taccuino
 
@@ -246,7 +244,7 @@
   </section>
 
 
-  <section class="mail">
+  <section id="part3" class="mail">
 
 
       <div class="calendar">
@@ -305,7 +303,7 @@
 
       <div class="line"></div>
 
-      <a class="next text" href="/testdark.html">
+      <a class="next text" href="/last-words/testdark.html">
 
         Prendi penna e taccuino
 
