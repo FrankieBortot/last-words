@@ -1,3 +1,10 @@
+function reveal(elementid) {
+    document.getElementById(elementid).style.display = "block";
+}
+
+
+/*
+
 function reveal2() {
     document.getElementById("part2").style.display = "block";
 }
@@ -21,3 +28,5 @@ function reveal6() {
 function reveal7() {
     document.getElementById("part7").style.display = "block";
 }
+
+*/
