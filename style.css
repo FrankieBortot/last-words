@@ -146,11 +146,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.mail {
-  min-height: 100vh;
-  display:none;
-  scroll-behavior: smooth;
-}
 
 .light .speech {
     background-image: linear-gradient(to right,#f9c8c8, #f5f5cb);
@@ -190,11 +185,12 @@ html {
   z-index: 1;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 550px) {
   .calendar {
     font-size: 16pt;
     line-height: 16pt;
     letter-spacing: 5pt;
+    padding: 32px 0px;
   }
 }
 
@@ -204,32 +200,8 @@ html {
   text-shadow: 1px 0px #883030;
 }
 
-.light .sms .calendar {
-  background-image: linear-gradient(to right,#ecbaba, #f1e4bc);
-  color: #000;
-  text-shadow: 1px 0px #000;
-}
-
-.light .mail .calendar {
-  background-image: linear-gradient(to right,#fbafaf, #fad7b1);
-  color: #883030;
-  text-shadow: 1px 0px #883030;
-}
-
 .dark .speech .calendar {
   background-image: linear-gradient(to right, #390833, #072e46);
-  color: #fff;
-  text-shadow: 1px 0px #fff;
-}
-
-.dark .sms .calendar {
-  background-image: linear-gradient(to right, #2d162a, #203039);
-  color: #fff;
-  text-shadow: 1px 0px #fff;
-}
-
-.dark .mail .calendar {
-  background-image: linear-gradient(to right,#46053e, #072e46);
   color: #fff;
   text-shadow: 1px 0px #fff;
 }
@@ -259,6 +231,18 @@ html {
 .mail .container {
   background-color: #fff;
   border-radius: 0px 0px 24px 24px;
+}
+
+.light .sms .calendar {
+  background-image: linear-gradient(to right,#ecbaba, #f1e4bc);
+  color: #000;
+  text-shadow: 1px 0px #000;
+}
+
+.dark .sms .calendar {
+  background-image: linear-gradient(to right, #2d162a, #203039);
+  color: #fff;
+  text-shadow: 1px 0px #fff;
 }
 
 @media only screen and (max-width: 1032px) {
@@ -359,15 +343,7 @@ html {
   box-shadow: 0px 1px 3px 0px rgba(149, 110, 143, 0.3);
 }
 
-.sms .skip .text {
-  color: #000;
-  font-weight: 700;
-  background-color: #fff;
-  border-radius: 50px;
-  padding: 12px 24px;
-  margin: 16px 16px;
-  box-shadow: 0px 1px 3px 0px rgba(149, 110, 143, 0.3);
-}
+
 
 .frankie {
   display: block;
@@ -471,6 +447,18 @@ html {
   }
 }
 
+/* ----------------  SMS  ---------------- */
+
+.sms .skip .text {
+  color: #000;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 12px 24px;
+  margin: 16px 16px;
+  box-shadow: 0px 1px 3px 0px rgba(149, 110, 143, 0.3);
+}
+
 .sms .balloon {
   display: inline-block;
   background-color: #dcfcca;
@@ -546,6 +534,26 @@ html {
   }
 }
 
+/* ----------------  MAIL  ---------------- */
+
+.mail {
+  min-height: 100vh;
+  display:none;
+  scroll-behavior: smooth;
+}
+
+.light .mail .calendar {
+  background-image: linear-gradient(to right,#fbafaf, #fad7b1);
+  color: #883030;
+  text-shadow: 1px 0px #883030;
+}
+
+.dark .mail .calendar {
+  background-image: linear-gradient(to right,#46053e, #072e46);
+  color: #fff;
+  text-shadow: 1px 0px #fff;
+}
+
 .light .mail .heading {
   background-image: linear-gradient(to right,#fbafaf, #fad7b1);
 }
@@ -559,14 +567,26 @@ html {
   top: 149px;
 }
 
-.heading > .container {
+@media only screen and (max-width: 425px) {
+  .mail .heading {
+    top: 85px;
+  }
+}
 
+.heading > .container {
   border-radius: 24px 24px 0px 0px;
+  padding-bottom: 8px;
 }
 
 .mail .data {
   display: block;
   padding: 8px 8px 0px 8px;
+}
+
+@media only screen and (max-width: 425px) {
+ .mail .data {
+   padding: 0px 8px;
+ }
 }
 
 .mail .data .label {
@@ -619,7 +639,7 @@ html {
   font-size: 18px;
 
   text-align: left;
-  padding: 16px 32px;
+  padding: 24px 32px;
 }
 
 .button {
