@@ -2,27 +2,31 @@ html {
   scroll-behavior: smooth;
 }
 
-.light .gradient {
+.light .intro {
   background-image: linear-gradient(-45deg, #fcfbbb, #ffe4e4);
 }
 
-.dark .gradient {
+.dark .intro {
   background-image: linear-gradient(-45deg, #05273c, #2e0629);
 }
 
-.header {
+.black .intro {
+  background-color: #000;
+}
+
+.intro {
   height: 100vh;
 }
 
-.month {
+.top {
+  height: 50vh;
   display: flex;
-  height: 40%;
-  padding-bottom: 16px;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.month .text {
+.month {
   font-family: 'Nunito', sans-serif;
   font-size: 72pt;
   line-height: 72pt;
@@ -34,7 +38,7 @@ html {
 }
 
 @media only screen and (max-width: 550px) {
-  .month .text {
+  .month {
     font-size: 56pt;
     line-height: 56pt;
     text-shadow: 3px 3px 0px #f60ccc, -3px -3px 0px #05ffff;
@@ -42,7 +46,7 @@ html {
 }
 
 @media only screen and (max-width: 425px) {
-  .month .text {
+  .month {
     font-size: 48pt;
     line-height: 48pt;
     letter-spacing: 5pt;
@@ -50,25 +54,16 @@ html {
   }
 }
 
-
-.light .month .text {
+.light .month {
   color: #fff;
 
 }
 
-.dark .month .text {
+.dark .month {
     color: #000;
 }
 
 .chapter {
-    display: flex;
-    padding-top: 32px;
-    height: 30%;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.chapter .text {
   display: block;
   font-family: 'Special Elite', sans-serif;
   font-size: 30pt;
@@ -76,10 +71,11 @@ html {
   font-weight: 400;
   text-align: center;
   letter-spacing: 15pt;
+  margin-top: 24px;
 }
 
 @media only screen and (max-width: 425px) {
-  .chapter .text {
+  .chapter {
     font-size: 20pt;
     line-height: 20pt;
     letter-spacing: 10pt;
@@ -87,25 +83,31 @@ html {
 }
 
 @media only screen and (max-width: 320px) {
-  .chapter .text {
+  .chapter {
     font-size: 20pt;
     line-height: 20pt;
     letter-spacing: 6pt;
   }
 }
 
-.light .chapter .text {
+.light .chapter {
   color: #883030;
   text-shadow: 1px 0px #883030;
 }
 
-.dark .chapter .text {
+.dark .chapter {
   color: #05ffff;
   text-shadow: 1px 0px #05ffff;
 }
 
+.bottom {
+   height: 50vh;
+   display: flex;
+   justify-content: center;
+}
+
 .scrollup {
-  height: 30%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,10 +174,33 @@ html {
 }
 
 
-.calendar {
+.header {
   display: block;
   position: sticky;
   top: 0;
+  z-index: 1;
+}
+
+.light .speech .header {
+  background-image: linear-gradient(to right,#f9c8c8, #f5f5cb);
+}
+
+.dark .speech .header {
+  background-image: linear-gradient(to right, #390833, #072e46);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1032px) {
+  .container {
+    margin: 0px 16px;
+  }
+}
+
+.calendar {
   font-family: 'Special Elite', sans-serif;
   font-size: 24pt;
   font-weight: 400;
@@ -195,27 +220,16 @@ html {
 }
 
 .light .speech .calendar {
-  background-image: linear-gradient(to right,#f9c8c8, #f5f5cb);
   color: #883030;
   text-shadow: 1px 0px #883030;
 }
 
 .dark .speech .calendar {
-  background-image: linear-gradient(to right, #390833, #072e46);
   color: #fff;
   text-shadow: 1px 0px #fff;
 }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-}
 
-@media only screen and (max-width: 1032px) {
-  .container {
-    margin: 0px 16px;
-  }
-}
 
 .speech .container {
   /* padding: 0px 20px; */
@@ -228,10 +242,6 @@ html {
   padding: 24px 0px;
 }
 
-.mail .container {
-  background-color: #fff;
-  border-radius: 0px 0px 24px 24px;
-}
 
 .light .sms .calendar {
   background-image: linear-gradient(to right,#ecbaba, #f1e4bc);
@@ -245,24 +255,13 @@ html {
   text-shadow: 1px 0px #fff;
 }
 
-@media only screen and (max-width: 1032px) {
-  .texter {
-    margin: 0px 16px;
-  }
-}
-
-.light .texter {
+.light .sms .header {
   background-image: linear-gradient(to right,#ecbaba, #f1e4bc);
-  position: sticky;
-  z-index: 1;
-  top: 112px;
 }
 
-.dark .texter {
-    background-image: linear-gradient(to right,#2d162a, #203039);
-  position: sticky;
-  z-index: 1;
-  top: 112px;
+.dark .sms .header {
+  background-image: linear-gradient(to right,#2d162a, #203039);
+
 }
 
 @media only screen and (max-width: 425px) {
@@ -271,10 +270,8 @@ html {
   }
 }
 
-.texter > .container {
+.sms .header .container {
   box-sizing: border-box;
-  position: sticky;
-  margin: auto;
   display: flex;
   align-items: center;
   height: 100px;
@@ -284,12 +281,12 @@ html {
 }
 
 @media only screen and (max-width: 425px) {
-  .texter .box {
+  .sms .header .container   {
     padding: 0px 16px;
   }
 }
 
-.texter .profile {
+.sms .header .profile {
   height: 64px;
   width: 64px;
   border-radius: 50px;
@@ -298,29 +295,30 @@ html {
 }
 
 @media only screen and (max-width: 425px) {
-  .texter .profile {
+  .sms .header .profile {
     margin: 0px 8px;
   }
 }
 
-.texter .name {
+.sms .header .name {
   color: #777777;
   font-weight: 600;
   font-size: 20px;
+  padding-left: 4px;
 }
 
 @media only screen and (max-width: 425px) {
-  .texter .name {
+  .sms .header .name {
     font-size: 18px;
   }
 }
 
-.texter .status {
+.sms .header .status {
   display: flex;
   align-items: center;
 }
 
-.texter .status .icon {
+.sms .header .status .icon {
   height: 8px;
   width: 8px;
   border-radius: 10px;
@@ -329,7 +327,7 @@ html {
 
 }
 
-.texter .status .text {
+.sms .header .status .text {
   font-weight: 400;
 }
 
@@ -544,54 +542,47 @@ html {
 .mail {
   min-height: 100vh;
   display:none;
-  scroll-behavior: smooth;
+}
+
+
+.light .mail .header {
+  background-image: linear-gradient(to right,#fbafaf, #fad7b1);
+}
+
+.dark .mail .header {
+    background-image: linear-gradient(to right,#46053e, #072e46);
+}
+
+.mail .container {
+  background-color: #fff;
+  border-radius: 0px 0px 24px 24px;
 }
 
 .light .mail .calendar {
-  background-image: linear-gradient(to right,#fbafaf, #fad7b1);
   color: #883030;
   text-shadow: 1px 0px #883030;
 }
 
 .dark .mail .calendar {
-  background-image: linear-gradient(to right,#46053e, #072e46);
   color: #fff;
   text-shadow: 1px 0px #fff;
 }
 
-.light .mail .heading {
-  background-image: linear-gradient(to right,#fbafaf, #fad7b1);
-}
 
-.dark .mail .heading {
-  background-image: linear-gradient(to right,#46053e, #072e46);
-}
-
-.mail .heading {
-  position: sticky;
-  top: 149px;
-}
-
-@media only screen and (max-width: 425px) {
-  .mail .heading {
-    top: 85px;
-  }
-}
-
-.heading > .container {
+.header .container {
   border-radius: 24px 24px 0px 0px;
-  padding-bottom: 8px;
+  padding: 8px 0px 8px 0px;
 }
 
 .mail .data {
   display: block;
-  padding: 32px 32px 0px 8px;
+  padding-left: 32px;
 }
 
 @media only screen and (max-width: 425px) {
- .mail .data:not(first-child) {
-   padding-top: 0px;
- }
+  .mail .data {
+    padding-left: 16px;
+  }
 }
 
 .mail .data .label {
@@ -600,7 +591,7 @@ html {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  padding: 12px 0px 0px 24px;
+  padding: 12px 0px 0px 0px;
 }
 
 .mail .data .address {
@@ -609,7 +600,7 @@ html {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  padding: 4px 0px 4px 32px ;
+  padding: 4px 0px 4px 8px ;
 }
 
 .mail .data .insert-address {
@@ -619,7 +610,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   padding: 4px 0px 4px 16px ;
-  margin: 4px 16px;
+  margin: 4px -4px;
   border-radius: 50px;
   border: 2px solid #02004F;
 }
@@ -630,7 +621,7 @@ html {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  padding: 4px 0px 12px 32px ;
+  padding: 4px 0px 12px 8px ;
 }
 
 .mail .divider {
@@ -651,6 +642,8 @@ html {
    padding: 8px 16px 24px 16px;
  }
 }
+
+/* ---------------- MAIL ---------------- */
 
 .button {
   display: flex;
