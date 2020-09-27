@@ -3,11 +3,11 @@ html {
 }
 
 .light .intro {
-  background-image: linear-gradient(-45deg, #fcfbbb, #ffe4e4);
+  background-image: linear-gradient(135deg, #b5ecfe, #fcfcc6, #f7e6e6);
 }
 
 .dark .intro {
-  background-image: linear-gradient(-45deg, #05273c, #2e0629);
+  background-image: linear-gradient(45deg, #340000, #2e0629, #05273c);
 }
 
 .black .intro {
@@ -56,7 +56,6 @@ html {
 
 .light .month {
   color: #fff;
-
 }
 
 .dark .month {
@@ -70,19 +69,11 @@ html {
   line-height: 30pt;
   font-weight: 400;
   text-align: center;
-  letter-spacing: 15pt;
+  letter-spacing: 12pt;
   margin-top: 24px;
 }
 
 @media only screen and (max-width: 425px) {
-  .chapter {
-    font-size: 20pt;
-    line-height: 20pt;
-    letter-spacing: 10pt;
-  }
-}
-
-@media only screen and (max-width: 320px) {
   .chapter {
     font-size: 20pt;
     line-height: 20pt;
@@ -150,15 +141,15 @@ html {
 
 
 .light .speech {
-    background-image: linear-gradient(to right,#f9c8c8, #f5f5cb);
+    background-image: linear-gradient(to right, #f5f5cb, #f9c8c8);
 }
 
 .light .sms {
-  background-image: linear-gradient(to right,#ecbaba, #f1e4bc);
+  background-image: linear-gradient(to right, #f1e4bc, #ecbaba);
 }
 
 .light .mail {
-  background-image: linear-gradient(to right,#fbafaf, #fad7b1);
+  background-image: linear-gradient(to right, #fad7b1, #fbafaf);
 }
 
 .dark .speech {
@@ -182,7 +173,7 @@ html {
 }
 
 .light .speech .header {
-  background-image: linear-gradient(to right,#f9c8c8, #f5f5cb);
+  background-image: linear-gradient(to right, #f5f5cb, #f9c8c8);
 }
 
 .dark .speech .header {
@@ -194,7 +185,7 @@ html {
   margin: auto;
 }
 
-@media only screen and (max-width: 1032px) {
+@media only screen and (max-width: 1048px) {
   .container {
     margin: 0px 16px;
   }
@@ -244,7 +235,7 @@ html {
 
 
 .light .sms .calendar {
-  background-image: linear-gradient(to right,#ecbaba, #f1e4bc);
+  background-image: linear-gradient(to right, #f1e4bc, #ecbaba);
   color: #000;
   text-shadow: 1px 0px #000;
 }
@@ -256,7 +247,7 @@ html {
 }
 
 .light .sms .header {
-  background-image: linear-gradient(to right,#ecbaba, #f1e4bc);
+  background-image: linear-gradient(to right, #f1e4bc, #ecbaba);
 }
 
 .dark .sms .header {
@@ -546,11 +537,11 @@ html {
 
 
 .light .mail .header {
-  background-image: linear-gradient(to right,#fbafaf, #fad7b1);
+  background-image: linear-gradient(to right, #fad7b1, #fbafaf);
 }
 
 .dark .mail .header {
-    background-image: linear-gradient(to right,#46053e, #072e46);
+    background-image: linear-gradient(to right, #46053e, #072e46);
 }
 
 .mail .container {
@@ -643,13 +634,13 @@ html {
  }
 }
 
-/* ---------------- MAIL ---------------- */
+/* ---------------- BUTTON ---------------- */
 
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 48px 0px;
+  padding: 36px 0px 48px 0px;
   margin: auto;
 }
 
@@ -672,47 +663,70 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
+  width: 100%;
   max-width: 500px;
+  margin: 0px 16px;
   padding: 20px 36px;
   border-radius: 50px;
 }
 
 @media only screen and (max-width: 425px) {
-  .button .text {
+  .continue, .special, .continue:hover, .continue:active, .special:hover, .special:active,  {
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: 1pt;
     padding: 12px 24px;
   }
 }
 
-.next, .continue {
-  cursor: pointer;
-  min-width: 288px;
-  margin: 0px 16px;
+.continue {
+  background-image: linear-gradient(-45deg, #8a09fc, #0047bf);
+  box-shadow: 0px 0px 16px 4px rgba(0, 61, 195, 0.62);
+
 }
 
-.button .continue {
-  background-image: linear-gradient(-45deg, #3f3486, #2e8b6b);
+.light .continue {
+  box-shadow: 0px 0px 16px 4px rgba(3, 58, 255, 0.5);
 }
 
-.button .continue:hover {
+.black .continue {
+    box-shadow: 0px 0px 16px 4px rgba(78, 37, 217, 1);
+}
+
+.continue:hover {
+  box-shadow: none;
+}
+
+.continue:active {
   color: #00278A;
   letter-spacing: 1pt;
-  font-weight: 700;
-  background-image: linear-gradient(-45deg, #bae1ff, #baffe7);
+  font-weight: 600;
+  background-image: linear-gradient(-45deg, #c3a9fa, #9fcdfc);
   padding: 18px 34px;
   border: 2px solid #3f3486;
+  box-shadow: none;
 }
 
-.button .special  {
-  background-image: linear-gradient(-45deg, #581d87, #983737);
+.special  {
+  background-image: linear-gradient(-45deg, #e000ca, #e9004c);
+  box-shadow: 0px 0px 16px 4px rgba(249, 35, 144, 0.5);
 }
 
-.button .special:hover {
-  color: #00278A;
+.black .special {
+  box-shadow: 0px 0px 16px 4px rgba(193, 0, 110, 1);
+}
+
+.special:hover {
+  box-shadow: none;
+}
+
+.special:active  {
+  color: #6b006e;
   letter-spacing: 1pt;
-  font-weight: 700;
-  background-image: linear-gradient(-45deg, #c393e9, #cd9191);
+  font-weight: 600;
+  background-image: linear-gradient(-45deg, #f7a2d8, #f69f9f);
   padding: 18px 34px;
-  border: 2px solid #00278A;
+  border: 2px solid #6b006e;
+  box-shadow: none;
 }
