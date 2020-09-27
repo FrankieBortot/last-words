@@ -3,7 +3,7 @@ html {
 }
 
 .light .intro {
-  background-image: linear-gradient(135deg, #b5ecfe, #fcfcc6, #f7e6e6);
+  background-image: linear-gradient(135deg, #b5ecfe, #fcfcc6, #fce1e1);
 }
 
 .dark .intro {
