@@ -197,7 +197,7 @@ html {
   font-weight: 400;
   text-align: center;
   letter-spacing: 15pt;
-  padding: 64px 0px;
+  padding: 56px 0px;
   z-index: 1;
 }
 
@@ -210,12 +210,12 @@ html {
   }
 }
 
-.light .speech .calendar {
+.light .calendar {
   color: #883030;
   text-shadow: 1px 0px #883030;
 }
 
-.dark .speech .calendar {
+.dark .calendar {
   color: #fff;
   text-shadow: 1px 0px #fff;
 }
@@ -236,14 +236,10 @@ html {
 
 .light .sms .calendar {
   background-image: linear-gradient(to right, #f1e4bc, #ecbaba);
-  color: #000;
-  text-shadow: 1px 0px #000;
 }
 
 .dark .sms .calendar {
   background-image: linear-gradient(to right, #2d162a, #203039);
-  color: #fff;
-  text-shadow: 1px 0px #fff;
 }
 
 .light .sms .header {
@@ -265,8 +261,7 @@ html {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  height: 100px;
-  padding: 0px 16px;
+  padding: 16px;
   border-radius: 24px 24px 0px 0px ;
   background-color: white;
 }
@@ -278,6 +273,9 @@ html {
 }
 
 .sms .header .profile {
+  background-image: url("profilepic.jpg");
+   background-size: cover;
+   background-position: center;
   height: 64px;
   width: 64px;
   border-radius: 50px;
@@ -315,16 +313,15 @@ html {
   border-radius: 10px;
   background-color: #30c840;
   margin: 0px 4px;
-
 }
 
 .sms .header .status .text {
   font-weight: 400;
 }
 
-
 .skip {
   text-align: center;
+  padding: 24px 0px;
 }
 
 .speech .skip .text {
@@ -366,6 +363,13 @@ html {
   font-size: 18px;
   line-height: 28px;
   text-align: left;
+}
+
+.highlight {
+  display: inline;
+  font-style: oblique;
+  font-weight: 700;
+  letter-spacing: 1pt;
 }
 
 @media only screen and (max-width: 425px) {
@@ -504,7 +508,7 @@ html {
 }
 
 
-.sms .her .balloon:before {
+.sms .her .balloon:first-child:before {
   content: "";
   width: 0px;
   height: 0px;
@@ -548,17 +552,6 @@ html {
   background-color: #fff;
   border-radius: 0px 0px 24px 24px;
 }
-
-.light .mail .calendar {
-  color: #883030;
-  text-shadow: 1px 0px #883030;
-}
-
-.dark .mail .calendar {
-  color: #fff;
-  text-shadow: 1px 0px #fff;
-}
-
 
 .header .container {
   border-radius: 24px 24px 0px 0px;
@@ -672,13 +665,22 @@ html {
 }
 
 @media only screen and (max-width: 425px) {
+  .special.text continue.text {
+    font-size: 16pt;
+    line-height: 24pt;
+    letter-spacing: 1pt;
+    padding: 12px 24px;
+  }
+}
+
+/* @media only screen and (max-width: 425px) {
   .continue, .special, .continue:hover, .continue:active, .special:hover, .special:active,  {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1pt;
     padding: 12px 24px;
   }
-}
+} */
 
 .continue {
   background-image: linear-gradient(-45deg, #8a09fc, #0047bf);
