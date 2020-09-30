@@ -696,7 +696,7 @@ html {
 }
 
 @media only screen and (max-width: 425px) {
-  .special.text continue.text {
+  .special.text, .continue.text {
     font-size: 16pt;
     line-height: 24pt;
     letter-spacing: 1pt;
