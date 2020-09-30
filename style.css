@@ -438,7 +438,7 @@ html {
   }
 }
 
-.speech .her .balloon:before {
+.speech .her .balloon:first-child:before {
   content: "";
   width: 0px;
   height: 0px;
@@ -452,7 +452,7 @@ html {
 }
 
 @media only screen and (max-width: 425px) {
-  .speech .her .balloon:before {
+  .speech .her .balloon:first-child:before {
     border-left: 16px solid transparent;
     border-right: 16px solid #fff;
     border-top: 16px solid #fff;
@@ -678,7 +678,7 @@ html {
   border-radius: 5px;
 } */
 
-.button .text {
+.button .text  {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
@@ -697,18 +697,21 @@ html {
 }
 
 @media only screen and (max-width: 425px) {
-  .special.text, .continue.text{
+  .special.text, .continue.text {
     font-size: 16pt;
     line-height: 24pt;
     letter-spacing: 1pt;
     padding: 12px 24px;
   }
 
+
   .special.text:active, .continue.text:Active {
     font-size: 16pt;
     line-height: 24pt;
     letter-spacing: 1pt;
     padding: 10px 22px;
+}
+
 }
 
 /* @media only screen and (max-width: 425px) {
