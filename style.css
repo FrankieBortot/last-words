@@ -560,7 +560,7 @@ html {
   box-sizing: border-box;;
   background-color: #fff;
   border-radius: 0px 0px 24px 24px;
-  padding: 12px 24px 32px 24px;
+  padding: 12px 32px 32px 32px;
 }
 
 @media only screen and (max-width: 425px) {
