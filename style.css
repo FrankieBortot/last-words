@@ -564,7 +564,7 @@ html {
 }
 
 @media only screen and (max-width: 425px) {
- .mail .container, .header .container {
+ .mail .container {
    padding: 8px 16px 24px 16px;
  }
 }
@@ -576,7 +576,13 @@ html {
 
 .mail .data {
   display: block;
-  padding-left: 32px;
+  padding: 0px 32px 0px 32px;
+}
+
+@media only screen and (max-width: 425px) {
+  .mail .data {
+    padding-left: 0px 16px 0px 16px;
+  }
 }
 
 .mail .data .label {
