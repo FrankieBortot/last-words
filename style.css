@@ -48,7 +48,7 @@ html {
 @media only screen and (max-width: 425px) {
   .title {
     font-size: 48pt;
-    line-height: 48pt;
+    line-height: 56pt;
     letter-spacing: 5pt;
     text-shadow: 3px 3px 0px #f60ccc, -3px -3px 0px #05ffff;
   }
@@ -56,9 +56,10 @@ html {
 
 @media only screen and (max-width: 425px) {
   .month {
-    font-size: 44pt;
-    line-height: 48pt;
-    letter-spacing: 3pt;
+    font-size: 36pt;
+    line-height: 36pt;
+    letter-spacing: 1pt;
+    text-shadow: 3px 3px 0px #f60ccc, -2px -2px 0px #05ffff;
   }
 }
 
@@ -78,7 +79,7 @@ html {
   font-weight: 400;
   text-align: center;
   letter-spacing: 12pt;
-  margin-top: 24px;
+  margin-top: 36px;
 }
 
 @media only screen and (max-width: 425px) {
