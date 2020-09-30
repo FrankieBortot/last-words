@@ -105,12 +105,20 @@ html {
 }
 
 .scrollup .icon {
+  font-size: 36px;
   height: 36px;
   width: 36px;
-  fill: #fff;
   position: relative;
   animation: MoveUpDown 2.5s ease infinite;
   fill: #fff;
+}
+
+.light .icon {
+  color: #f60ccc;
+}
+
+.dark .icon {
+  color: #05ffff;
 }
 
 @keyframes MoveUpDown {
@@ -307,7 +315,7 @@ html {
   align-items: center;
 }
 
-.sms .header .status .icon {
+.sms .header .status .pin {
   height: 8px;
   width: 8px;
   border-radius: 10px;
@@ -549,8 +557,16 @@ html {
 }
 
 .mail .container {
+  box-sizing: border-box;;
   background-color: #fff;
   border-radius: 0px 0px 24px 24px;
+  padding: 12px 24px 32px 24px;
+}
+
+@media only screen and (max-width: 425px) {
+ .mail .container {
+   padding: 8px 16px 24px 16px;
+ }
 }
 
 .header .container {
@@ -561,12 +577,6 @@ html {
 .mail .data {
   display: block;
   padding-left: 32px;
-}
-
-@media only screen and (max-width: 425px) {
-  .mail .data {
-    padding-left: 16px;
-  }
 }
 
 .mail .data .label {
@@ -605,11 +615,23 @@ html {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  padding: 4px 0px 12px 8px ;
+  padding: 4px 0px 8px 8px ;
 }
 
 .mail .divider {
   border-top: 1px solid #BEBEBE;
+}
+
+.mail .attach {
+  color: #676767;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.mail .attach .text {
+  color: #676767;
+  padding: 0px 0px 0px 4px;
 }
 
 .mail .text {
@@ -618,14 +640,9 @@ html {
   font-weight: 500;
   font-size: 18px;
   text-align: left;
-  padding: 24px 32px;
 }
 
-@media only screen and (max-width: 425px) {
- .mail .text {
-   padding: 8px 16px 24px 16px;
- }
-}
+
 
 /* ---------------- BUTTON ---------------- */
 
