@@ -3,7 +3,7 @@ html {
 }
 
 .light .intro {
-  background-image: linear-gradient(135deg, #fcfcc6, #fce1e1);
+  background-image: linear-gradient(135deg, #fcfcc6, #fcdddd);
 }
 
 .dark .intro {
@@ -732,7 +732,7 @@ html {
 .button .text  {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 24px;
   color: white;
   letter-spacing: 2px;
@@ -746,6 +746,7 @@ html {
   padding: 20px 36px;
   border-radius: 50px;
 }
+
 
 @media only screen and (max-width: 425px) {
   .special.text, .continue.text {
