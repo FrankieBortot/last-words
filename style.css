@@ -28,40 +28,44 @@ html {
 
 .month, .title {
   font-family: 'Nunito', sans-serif;
-  font-size: 72pt;
-  line-height: 72pt;
+  font-size: 100px;
+  line-height: 100px;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 10pt;
+  letter-spacing: 12px;
   text-align: center;
   text-shadow: 4px 4px 0px #f60ccc, -4px -4px 0px #05ffff;
 }
 
-@media only screen and (max-width: 550px) {
-  .month, .title {
-    font-size: 56pt;
-    line-height: 56pt;
-    text-shadow: 3px 3px 0px #f60ccc, -3px -3px 0px #05ffff;
-  }
-}
-
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 850px) {
   .title {
-    font-size: 48pt;
-    line-height: 56pt;
-    letter-spacing: 5pt;
+    font-size: 14vw;
+    line-height: 14vw;
+    letter-spacing: 6px;
+    text-shadow: 4px 4px 0px #f60ccc, -4px -4px 0px #05ffff;
+  }
+
+  .month {
+    font-size: 12vw;
+    line-height: 12vw;
+    letter-spacing: 1vw;
+    text-shadow: 4px 4px 0px #f60ccc, -4px -4px 0px #05ffff;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .month, .title {
     text-shadow: 3px 3px 0px #f60ccc, -3px -3px 0px #05ffff;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  .month {
-    font-size: 36pt;
-    line-height: 36pt;
-    letter-spacing: 1pt;
-    text-shadow: 3px 3px 0px #f60ccc, -2px -2px 0px #05ffff;
+  .month, .title {
+    text-shadow: 2px 2px 0px #f60ccc, -2px -2px 0px #05ffff;
   }
 }
+
+
 
 .light .month, .light .title {
   color: #fff;
@@ -74,19 +78,29 @@ html {
 .chapter {
   display: block;
   font-family: 'Special Elite', sans-serif;
-  font-size: 30pt;
-  line-height: 30pt;
+  font-size: 40px;
+  line-height: 40px;
   font-weight: 400;
   text-align: center;
-  letter-spacing: 12pt;
+  letter-spacing: 16px;
   margin-top: 36px;
+}
+
+@media only screen and (max-width: 850px) {
+  .chapter {
+    font-size: 5vw;
+    line-height: 5vw;
+    letter-spacing: 8px;
+    margin-top: 24px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
   .chapter {
-    font-size: 18pt;
-    line-height: 18pt;
-    letter-spacing: 6pt;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 8px;
+    margin-top: 24px;
   }
 }
 
@@ -111,6 +125,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 20%;
 }
 
 .scrollup .icon {
@@ -181,6 +196,18 @@ html {
   background-image: linear-gradient(to right,#46053e, #072e46);
 }
 
+.black .speech {
+  background-color: #000;
+}
+
+.black .sms {
+  background-color: #000;
+}
+
+.black .mail {
+  background-color: #000;
+}
+
 
 .header {
   display: block;
@@ -210,19 +237,19 @@ html {
 
 .calendar {
   font-family: 'Special Elite', sans-serif;
-  font-size: 24pt;
+  font-size: 32px;
   font-weight: 400;
   text-align: center;
-  letter-spacing: 15pt;
+  letter-spacing: 16px;
   padding: 56px 0px;
   z-index: 1;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 650px) {
   .calendar {
-    font-size: 16pt;
-    line-height: 16pt;
-    letter-spacing: 5pt;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 6px;
     padding: 32px 0px;
   }
 }
@@ -266,12 +293,6 @@ html {
 .dark .sms .header {
   background-image: linear-gradient(to right,#2d162a, #203039);
 
-}
-
-@media only screen and (max-width: 425px) {
-  .texter {
-    top: 85px;
-  }
 }
 
 .sms .header .container {
@@ -351,8 +372,6 @@ html {
   box-shadow: 0px 1px 3px 0px rgba(149, 110, 143, 0.3);
 }
 
-
-
 .frankie {
   display: block;
   text-align: right;
@@ -363,7 +382,7 @@ html {
   color: #003430;
 }
 
-.her {
+.her, .father {
   display: block;
   text-align: left;
   padding: 8px 8px;
@@ -386,7 +405,7 @@ html {
   display: inline;
   font-style: oblique;
   font-weight: 700;
-  letter-spacing: 1pt;
+  letter-spacing: 1px;
 }
 
 @media only screen and (max-width: 425px) {
@@ -456,6 +475,38 @@ html {
     border-left: 16px solid transparent;
     border-right: 16px solid #fff;
     border-top: 16px solid #fff;
+    border-bottom: 16px solid transparent;
+    margin-left: -32px;
+    margin-top: -12px;
+  }
+}
+
+.father .text {
+  color: #dadada;
+}
+
+.father .balloon {
+  background-color: #535353;
+}
+
+.speech .father .balloon:first-child:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid transparent;
+  border-right: 24px solid #535353;
+  border-top: 24px solid #535353;
+  border-bottom: 24px solid transparent;
+  margin-left: -48px;
+  margin-top: -16px;
+}
+
+@media only screen and (max-width: 425px) {
+  .speech .father .balloon:first-child:before {
+    border-left: 16px solid transparent;
+    border-right: 16px solid #535353;
+    border-top: 16px solid #535353;
     border-bottom: 16px solid transparent;
     margin-left: -32px;
     margin-top: -12px;
@@ -684,7 +735,7 @@ html {
   font-size: 20px;
   line-height: 24px;
   color: white;
-  letter-spacing: 1pt;
+  letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -698,17 +749,17 @@ html {
 
 @media only screen and (max-width: 425px) {
   .special.text, .continue.text {
-    font-size: 16pt;
-    line-height: 24pt;
-    letter-spacing: 1pt;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
     padding: 12px 24px;
   }
 
 
   .special.text:active, .continue.text:Active {
-    font-size: 16pt;
-    line-height: 24pt;
-    letter-spacing: 1pt;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
     padding: 10px 22px;
 }
 
@@ -743,7 +794,7 @@ html {
 
 .continue:active {
   color: #00278A;
-  letter-spacing: 1pt;
+  letter-spacing: 2px;
   font-weight: 600;
   background-image: linear-gradient(-45deg, #c3a9fa, #9fcdfc);
   padding: 18px 34px;
@@ -766,7 +817,7 @@ html {
 
 .special:active  {
   color: #6b006e;
-  letter-spacing: 1pt;
+  letter-spacing: 2px;
   font-weight: 600;
   background-image: linear-gradient(-45deg, #f7a2d8, #f69f9f);
   padding: 18px 34px;
