@@ -526,6 +526,20 @@ html {
   border-radius: 0px 24px 24px 0px;
 }
 
+@media only screen and (max-width: 425px) {
+  .frankie .balloon {
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  .her .balloon {
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  .father .balloon {
+    border-radius: 0px 20px 20px 0px;
+  }
+}
+
 .speech .frankie .balloon:last-child {
   border-top-left-radius: 24px;
   border-bottom-right-radius: 24px;
@@ -563,6 +577,41 @@ html {
 }
 
 @media only screen and (max-width: 425px) {
+  .speech .frankie .balloon:last-child {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .speech .frankie .balloon:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .speech .her .balloon:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .speech .her .balloon:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .speech .father .balloon:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .speech .father .balloon:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 
 }
 
