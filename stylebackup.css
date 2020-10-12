@@ -1,0 +1,895 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.light .intro {
+  background-image: linear-gradient(135deg, #fcfcc6, #fcdddd);
+}
+
+.dark .intro {
+  background-image: linear-gradient(45deg, #2e0629, #020b3b);
+}
+
+.black .intro {
+  background-color: #000;
+}
+
+.intro {
+  height: 100vh;
+}
+
+.top {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.month, .title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  text-align: center;
+  text-shadow: 4px 4px 0px #f60ccc, -4px -4px 0px #05ffff;
+}
+
+@media only screen and (max-width: 850px) {
+  .title {
+    font-size: 14vw;
+    line-height: 14vw;
+    letter-spacing: 6px;
+    text-shadow: 4px 4px 0px #f60ccc, -4px -4px 0px #05ffff;
+    padding: 0px 24px;
+  }
+
+  .month {
+    font-size: 12vw;
+    line-height: 12vw;
+    letter-spacing: 1vw;
+    text-shadow: 4px 4px 0px #f60ccc, -4px -4px 0px #05ffff;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .month, .title {
+    text-shadow: 3px 3px 0px #f60ccc, -3px -3px 0px #05ffff;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .month, .title {
+    text-shadow: 2px 2px 0px #f60ccc, -2px -2px 0px #05ffff;
+  }
+}
+
+.light .month, .light .title {
+  color: #fff;
+}
+
+.dark .month, .dark .title {
+    color: #000;
+}
+
+.chapter {
+  display: block;
+  font-family: 'Special Elite', sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 16px;
+  margin-top: 36px;
+  margin-bottom: 10vh;
+}
+
+@media only screen and (max-width: 850px) {
+  .chapter {
+    font-size: 5vw;
+    line-height: 5vw;
+    letter-spacing: 8px;
+    margin-top: 24px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .chapter {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 8px;
+    margin-top: 24px;
+  }
+}
+
+.light .chapter {
+  color: #883030;
+  text-shadow: 1px 0px #883030;
+}
+
+.dark .chapter {
+  color: #05ffff;
+  text-shadow: 1px 0px #05ffff;
+}
+
+.black .chapter {
+  color: #fff;
+  text-shadow: 1px 0px #fff;
+}
+
+.subtitle {
+  display: block;
+  font-family: 'Special Elite', sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 8px;
+  max-width: 850px;
+  padding: 36px 16px;
+}
+
+@media only screen and (max-width: 850px) {
+  .subtitle {
+    font-size: 3.5vw;
+    line-height: 5vw;
+    letter-spacing: 4px;
+    padding: 24px 16px;
+  }
+}
+
+.light .subtitle {
+  color: #883030;
+}
+
+.dark .subtitle {
+  color: #05ffff;
+}
+
+.black .subtitle {
+  color: #fff;
+}
+
+.bottom {
+   height: 40vh;
+   display: flex;
+   justify-content: center;
+}
+
+.scrollup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+}
+
+.scrollup .icon {
+  font-size: 36px;
+  height: 36px;
+  width: 36px;
+  position: relative;
+  animation: MoveUpDown 2.5s ease infinite;
+  fill: #fff;
+}
+
+.light .icon {
+  color: #f60ccc;
+}
+
+.dark .icon {
+  color: #05ffff;
+}
+
+.black .icon {
+  color: #fff;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 20px;
+    }
+
+  60% {
+    bottom: 100px;
+    }
+}
+
+#part1 {
+  display: block;
+}
+
+.speech {
+  min-height: 100vh;
+  display: none;
+  scroll-behavior: smooth;
+}
+
+.sms {
+  min-height: 100vh;
+  display: none;
+  scroll-behavior: smooth;
+}
+
+
+.light .speech {
+    background-image: linear-gradient(to right, #f5f5cb, #f9c8c8);
+}
+
+.light .sms {
+  background-image: linear-gradient(to right, #f1e4bc, #ecbaba);
+}
+
+.light .mail {
+  background-image: linear-gradient(to right, #fad7b1, #fbafaf);
+}
+
+.dark .speech {
+    background-image: linear-gradient(to right, #390833, #072e46);
+}
+
+.dark .sms {
+  background-image: linear-gradient(to right,#2d162a, #203039);
+}
+
+.dark .mail {
+  background-image: linear-gradient(to right,#46053e, #072e46);
+}
+
+.black .speech {
+  background-color: #000;
+}
+
+.black .sms {
+  background-color: #000;
+}
+
+.black .mail {
+  background-color: #000;
+}
+
+
+.header {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.light .speech .header {
+  background-image: linear-gradient(to right, #f5f5cb, #f9c8c8);
+}
+
+.dark .speech .header {
+  background-image: linear-gradient(to right, #390833, #072e46);
+}
+
+.black .header {
+  background-color: #000;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1048px) {
+  .container {
+    margin: 0px 16px;
+  }
+}
+
+.calendar {
+  font-family: 'Special Elite', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 16px;
+  padding: 56px 0px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 650px) {
+  .calendar {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 6px;
+    padding: 32px 0px;
+  }
+}
+
+.light .calendar {
+  color: #883030;
+  text-shadow: 1px 0px #883030;
+}
+
+.dark .calendar {
+  color: #05ffff;
+  text-shadow: 1px 0px #05ffff;
+}
+
+.black .calendar {
+  color: #fff;
+  text-shadow: 1px 0px #fff;
+}
+
+.speech .container {
+  /* padding: 0px 20px; */
+}
+
+.sms .container {
+  border-radius: 0px 0px 24px 24px;
+  border: 3px solid #fff;
+  border-top: none;
+  box-sizing: border-box;
+  padding: 24px 0px;
+}
+
+
+.light .sms .calendar {
+  background-image: linear-gradient(to right, #f1e4bc, #ecbaba);
+}
+
+.dark .sms .calendar {
+  background-image: linear-gradient(to right, #2d162a, #203039);
+}
+
+.light .sms .header {
+  background-image: linear-gradient(to right, #f1e4bc, #ecbaba);
+}
+
+.dark .sms .header {
+  background-image: linear-gradient(to right,#2d162a, #203039);
+
+}
+
+.sms .header .container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-radius: 24px 24px 0px 0px ;
+  background-color: #fff;
+  box-shadow: 0px 5px 8px -8px rgba(133, 133, 133, 0.5);
+}
+
+@media only screen and (max-width: 425px) {
+  .sms .header .container   {
+    padding: 8px 16px;
+  }
+}
+
+.sms .header .profile {
+  background-image: url("profilepic.jpg");
+   background-size: cover;
+   background-position: center;
+  height: 64px;
+  width: 64px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 0px 24px;
+}
+
+@media only screen and (max-width: 425px) {
+  .sms .header .profile {
+    margin: 0px 8px;
+  }
+}
+
+.sms .header .name {
+  color: #777777;
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 4px;
+}
+
+@media only screen and (max-width: 425px) {
+  .sms .header .name {
+    font-size: 18px;
+  }
+}
+
+.sms .header .status {
+  display: flex;
+  align-items: center;
+}
+
+.sms .header .status .pin {
+  height: 8px;
+  width: 8px;
+  border-radius: 10px;
+  background-color: #30c840;
+  margin: 0px 4px;
+}
+
+.sms .header .status .text {
+  font-weight: 400;
+}
+
+.skip {
+  text-align: center;
+  padding: 24px 0px;
+}
+
+.speech .skip .text {
+  color: #000;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 12px 24px;
+  margin: 16px 16px;
+  box-shadow: 0px 1px 3px 0px rgba(149, 110, 143, 0.3);
+}
+
+.frankie {
+  display: block;
+  text-align: right;
+  padding: 8px 8px;
+}
+
+.frankie .text {
+  color: #003430;
+}
+
+.her, .father, .generic {
+  display: block;
+  text-align: left;
+  padding: 8px 8px;
+}
+
+.her .text {
+  color: #340a00;
+}
+
+.father .text {
+  color: #dadada;
+}
+
+.generic .text {
+  color: #fff;
+}
+
+.text {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+
+.highlight {
+  display: inline;
+  font-style: oblique;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 425px) {
+  .text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.speech .balloon {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 16px 24px;
+  margin: 4px 16px;
+  box-shadow: 0px 1px 3px 0px rgba(149, 110, 143, 0.3);
+  max-width: 60%;
+}
+
+@media only screen and (max-width: 425px) {
+  .speech .balloon {
+    padding: 12px 16px;
+    margin: 4px 16px;
+  }
+}
+
+.father .balloon {
+  background-color: #535353;
+}
+
+.speech .generic .balloon {
+  background-color: #000;
+}
+
+.red {
+  border: 2px solid #cb0076;
+}
+
+.blue {
+  border: 2px solid #0056f0;
+}
+
+.green {
+  border: 2px solid #03d712;
+}
+
+.orange {
+  border: 2px solid #cd6905;
+}
+
+.speech .frankie .balloon:first-child:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #fff;
+    border-right: 24px solid transparent;
+    border-top: 24px solid #fff;
+    border-bottom: 24px solid transparent;
+    margin-left: 0px;
+    margin-top: -16px;
+}
+
+@media only screen and (max-width: 425px) {
+  .speech .frankie .balloon:first-child:after {
+    border-left: 16px solid #fff;
+    border-right: 16px solid transparent;
+    border-top: 16px solid #fff;
+    border-bottom: 16px solid transparent;
+    margin-left: 0px;
+    margin-top: -12px;
+  }
+}
+
+.speech .her .balloon:first-child:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid transparent;
+  border-right: 24px solid #fff;
+  border-top: 24px solid #fff;
+  border-bottom: 24px solid transparent;
+  margin-left: -48px;
+  margin-top: -16px;
+}
+
+@media only screen and (max-width: 425px) {
+  .speech .her .balloon:first-child:before {
+    border-left: 16px solid transparent;
+    border-right: 16px solid #fff;
+    border-top: 16px solid #fff;
+    border-bottom: 16px solid transparent;
+    margin-left: -32px;
+    margin-top: -12px;
+  }
+}
+
+
+
+.speech .father .balloon:first-child:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid transparent;
+  border-right: 24px solid #535353;
+  border-top: 24px solid #535353;
+  border-bottom: 24px solid transparent;
+  margin-left: -48px;
+  margin-top: -16px;
+}
+
+@media only screen and (max-width: 425px) {
+  .speech .father .balloon:first-child:before {
+    border-left: 16px solid transparent;
+    border-right: 16px solid #535353;
+    border-top: 16px solid #535353;
+    border-bottom: 16px solid transparent;
+    margin-left: -32px;
+    margin-top: -12px;
+  }
+}
+
+/* ----------------  SMS  ---------------- */
+
+.sms .skip .text {
+  color: #000;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 12px 24px;
+  margin: 16px 16px;
+  box-shadow: 0px 1px 3px 0px rgba(149, 110, 143, 0.3);
+}
+
+.sms .balloon {
+  display: inline-block;
+  background-color: #dcfcca;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin: 2px 32px;
+  box-shadow: 0px 1px 3px 0px rgba(37, 60, 0, 0.3);
+  max-width: 60%;
+}
+
+@media only screen and (max-width: 425px) {
+  .sms .balloon {
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 2px 16px;
+  }
+}
+
+.sms .frankie .balloon {
+  background-color: #dcfcca;
+}
+
+.sms .her .balloon {
+  background-color: #fff;
+}
+
+.sms .frankie .balloon:first-child:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 16px solid #dcfcca;
+  border-right: 16px solid transparent;
+  border-top: 16px solid #dcfcca;
+  border-bottom: 16px solid transparent;
+  margin-left: 0px;
+  margin-top: -8px;
+}
+
+@media only screen and (max-width: 425px) {
+  .sms .frankie .balloon:first-child:after {
+    border-left: 12px solid #dcfcca;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #dcfcca;
+    border-bottom: 12px solid transparent;
+    margin-left: 0px;
+    margin-top: -8px;
+  }
+}
+
+
+.sms .her .balloon:first-child:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 12px solid transparent;
+  border-right: 12px solid #fff;
+  border-top: 12px solid #fff;
+  border-bottom: 12px solid transparent;
+  margin-left: -32px;
+  margin-top: -8px;
+}
+
+@media only screen and (max-width: 425px) {
+  .sms .her .balloon:first-child:before {
+    border-left: 12px solid transparent;
+    border-right: 12px solid #fff;
+    border-top: 12px solid #fff;
+    border-bottom: 12px solid transparent;
+    margin-left: -24px;
+    margin-top: -8px;
+  }
+}
+
+/* ----------------  MAIL  ---------------- */
+
+.mail {
+  min-height: 100vh;
+  display:none;
+}
+
+
+.light .mail .header {
+  background-image: linear-gradient(to right, #fad7b1, #fbafaf);
+}
+
+.dark .mail .header {
+    background-image: linear-gradient(to right, #46053e, #072e46);
+}
+
+.mail .container {
+  box-sizing: border-box;;
+  background-color: #fff;
+  border-radius: 0px 0px 24px 24px;
+  padding: 12px 32px 32px 32px;
+}
+
+@media only screen and (max-width: 425px) {
+ .mail .container {
+   padding: 8px 16px 24px 16px;
+ }
+}
+
+.header .container {
+  border-radius: 24px 24px 0px 0px;
+  padding: 8px 0px 8px 0px;
+}
+
+.mail .data {
+  display: block;
+  padding: 0px 32px 0px 32px;
+}
+
+@media only screen and (max-width: 425px) {
+  .mail .data {
+    padding: 0px 16px 0px 16px;
+  }
+}
+
+.mail .data .label {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 12px 0px 0px 0px;
+}
+
+.mail .data .address {
+  color: #02004F;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 4px 0px 4px 8px ;
+}
+
+.mail .data .insert-address {
+  color: #02004F;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 4px 0px 4px 16px ;
+  margin: 4px -4px;
+  border-radius: 50px;
+  border: 2px solid #02004F;
+}
+
+.mail .data .object {
+  color: #4d4d4d;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 4px 0px 8px 8px ;
+}
+
+.mail .divider {
+  border-top: 1px solid #BEBEBE;
+}
+
+.mail .attach {
+  color: #676767;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.mail .attach .text {
+  color: #676767;
+  padding: 0px 0px 0px 4px;
+}
+
+.mail .text {
+  color: #383838;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: left;
+}
+
+
+
+/* ---------------- BUTTON ---------------- */
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 0px 48px 0px;
+  margin: auto;
+}
+
+.button .text  {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: white;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  max-width: 500px;
+  margin: 0px 16px;
+  padding: 20px 36px;
+  border-radius: 50px;
+}
+
+
+@media only screen and (max-width: 425px) {
+  .special.text, .continue.text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+  }
+
+
+  .special.text:active, .continue.text:Active {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    padding: 10px 22px;
+}
+
+}
+
+/* @media only screen and (max-width: 425px) {
+  .continue, .special, .continue:hover, .continue:active, .special:hover, .special:active,  {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1pt;
+    padding: 12px 24px;
+  }
+} */
+
+.continue {
+  background-image: linear-gradient(-45deg, #8a09fc, #0047bf);
+  box-shadow: 0px 0px 16px 4px rgba(0, 61, 195, 0.62);
+
+}
+
+.light .continue {
+  box-shadow: 0px 0px 16px 4px rgba(3, 58, 255, 0.5);
+}
+
+.black .continue {
+    box-shadow: 0px 0px 16px 4px rgba(78, 37, 217, 1);
+}
+
+.continue:hover {
+  box-shadow: none;
+}
+
+.continue:active {
+  color: #00278A;
+  letter-spacing: 2px;
+  font-weight: 600;
+  background-image: linear-gradient(-45deg, #c3a9fa, #9fcdfc);
+  padding: 18px 34px;
+  border: 2px solid #3f3486;
+  box-shadow: none;
+}
+
+.special  {
+  background-image: linear-gradient(-45deg, #e000ca, #e9004c);
+  box-shadow: 0px 0px 16px 4px rgba(249, 35, 144, 0.5);
+}
+
+.black .special {
+  box-shadow: 0px 0px 16px 4px rgba(193, 0, 110, 1);
+}
+
+.special:hover {
+  box-shadow: none;
+}
+
+.special:active  {
+  color: #6b006e;
+  letter-spacing: 2px;
+  font-weight: 600;
+  background-image: linear-gradient(-45deg, #f7a2d8, #f69f9f);
+  padding: 18px 34px;
+  border: 2px solid #6b006e;
+  box-shadow: none;
+}
