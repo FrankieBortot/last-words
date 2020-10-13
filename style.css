@@ -815,29 +815,35 @@ html {
 /* ---------------- BUTTON ---------------- */
 
 .choose .text  {
-  color: white;
-  padding: 16px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  padding-top: 36px;
+  margin-bottom: -24px;
 }
 
 .or .text {
-  color: white;
-  font-size: 12px;
-  padding: 12px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  margin: -24px 0px;
+}
+
+.higher16 {
+  position: relative;
+  top: -16px;
 }
 
 .button {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  padding: 36px 0px 48px 0px;
   margin: auto;
 }
 
 .button > .text  {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 24px;
   color: white;
   letter-spacing: 2px;
@@ -848,11 +854,29 @@ html {
   width: 100%;
   min-width: 288px;
   max-width: 500px;
-  margin: 0px 16px;
+  margin: 48px 16px;
   padding: 20px 36px;
   border-radius: 50px;
 }
 
+.black .special.text {
+  padding: 18px 34px;
+  border: 2px solid white;
+  box-shadow: 0px 0px 16px 4px rgba(255, 179, 222, 0.7);
+}
+
+@media only screen and (max-width: 425px) {
+   .black .special.text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    padding: 10px 22px;
+  }
+}
+
+.black .special:hover {
+  box-shadow: none;
+}
 
 @media only screen and (max-width: 425px) {
   .special.text, .continue.text {
@@ -862,24 +886,13 @@ html {
     padding: 12px 24px;
   }
 
-
-  .special.text:active, .continue.text:Active {
+  .special.text:active, .continue.text:active {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1px;
     padding: 10px 22px;
-}
-
-}
-
-/* @media only screen and (max-width: 425px) {
-  .continue, .special, .continue:hover, .continue:active, .special:hover, .special:active,  {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 1pt;
-    padding: 12px 24px;
   }
-} */
+}
 
 .continue {
   background-image: linear-gradient(-45deg, #8a09fc, #0047bf);
@@ -912,11 +925,6 @@ html {
 .special  {
   background-image: linear-gradient(-45deg, #e000ca, #e9004c);
   box-shadow: 0px 0px 16px 4px rgba(249, 35, 144, 0.5);
-}
-
-.black .special {
-  border: 2px solid white;
-  box-shadow: 0px 0px 16px 4px rgba(193, 0, 110, 1);
 }
 
 .special:hover {
