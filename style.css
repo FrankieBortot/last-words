@@ -276,7 +276,7 @@ html {
 
 @media only screen and (max-width: 1048px) {
   .container {
-    margin: 0px 16px;
+    margin: 0px 4px;
   }
 }
 
@@ -362,8 +362,8 @@ html {
 
 .sms .header .profile {
   background-image: url("profilepic.jpg");
-   background-size: cover;
-   background-position: center;
+  background-size: cover;
+  background-position: center;
   height: 64px;
   width: 64px;
   border-radius: 50px;
@@ -470,8 +470,9 @@ html {
 
 @media only screen and (max-width: 425px) {
   .text {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -492,6 +493,7 @@ html {
 
 .father .balloon {
   background-color: #535353;
+  margin-left: 16px;
 }
 
 .speech .generic .balloon {
@@ -813,15 +815,24 @@ html {
 
 /* ---------------- BUTTON ---------------- */
 
+.choose .text  {
+  color: white;
+  padding-bottom: 16px;
+}
+
+.or .text {
+  color: white;
+  font-size: 12px;
+  padding: 12px;
+}
+
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   padding: 36px 0px 48px 0px;
   margin: auto;
 }
 
-.button .text  {
+.button > .text  {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
@@ -833,6 +844,7 @@ html {
   text-align: center;
   cursor: pointer;
   width: 100%;
+  min-width: 288px;
   max-width: 500px;
   margin: 0px 16px;
   padding: 20px 36px;
@@ -901,6 +913,7 @@ html {
 }
 
 .black .special {
+  border: 2px solid white;
   box-shadow: 0px 0px 16px 4px rgba(193, 0, 110, 1);
 }
 
