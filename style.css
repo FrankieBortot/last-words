@@ -274,9 +274,9 @@ html {
   margin: auto;
 }
 
-@media only screen and (max-width: 1048px) {
+@media only screen and (max-width: 1032px) {
   .container {
-    margin: 0px 4px;
+    margin: 0px 12px;
   }
 }
 
@@ -425,7 +425,7 @@ html {
 .frankie {
   display: block;
   text-align: right;
-  padding: 8px 8px;
+  padding: 8px 4px;
 }
 
 .frankie .text {
@@ -493,7 +493,7 @@ html {
 
 .father .balloon {
   background-color: #535353;
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .speech .generic .balloon {
@@ -642,7 +642,7 @@ html {
 @media only screen and (max-width: 425px) {
   .sms .balloon {
     padding: 8px 12px;
-    margin: 2px 16px;
+    margin: 2px 12px;
   }
 }
 
@@ -817,7 +817,7 @@ html {
 
 .choose .text  {
   color: white;
-  padding-bottom: 16px;
+  padding: 16px;
 }
 
 .or .text {
@@ -827,7 +827,10 @@ html {
 }
 
 .button {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   padding: 36px 0px 48px 0px;
   margin: auto;
 }
