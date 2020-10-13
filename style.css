@@ -435,7 +435,7 @@ html {
 .her, .father, .generic {
   display: block;
   text-align: left;
-  padding: 8px 8px;
+  padding: 8px 4px;
 }
 
 .her .text {
@@ -807,7 +807,6 @@ html {
   color: #383838;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  font-size: 18px;
   text-align: left;
 }
 
