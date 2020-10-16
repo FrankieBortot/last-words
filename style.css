@@ -131,10 +131,10 @@ html {
   padding: 36px 16px;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 650px) {
   .subtitle {
-    font-size: 3.5vw;
-    line-height: 5vw;
+    font-size: 5.5vw;
+    line-height: 9vw;
     letter-spacing: 4px;
     padding: 24px 16px;
   }
@@ -142,10 +142,12 @@ html {
 
 .light .subtitle {
   color: #883030;
+  text-shadow: 0.5px 0px #883030;
 }
 
 .dark .subtitle {
   color: #05ffff;
+  text-shadow: 0.5px 0px #05ffff;
 }
 
 .black .subtitle {
