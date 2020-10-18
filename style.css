@@ -30,6 +30,10 @@ html {
   height: 100vh;
 }
 
+.alternate .intro {
+  height: 150vh;
+}
+
 .top {
   height: 60vh;
   display: flex;
@@ -37,6 +41,7 @@ html {
   align-items: center;
   justify-content: flex-end;
 }
+
 
 .month, .title {
   font-family: 'Nunito', sans-serif;
@@ -553,7 +558,7 @@ html {
 }
 
 .doc {
-  border: 2px solid #a479ff;
+  border: 2px solid #fa6060;
 }
 
 .frankie .balloon {
