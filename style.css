@@ -10,9 +10,21 @@ html {
   background-image: linear-gradient(45deg, #2e0629, #020b3b);
 }
 
+.dark.alternate .intro {
+  background-image: linear-gradient(45deg, #4b0342, #000e58);
+}
+
 .black .intro {
   background-color: #000;
 }
+
+.hide {
+  display: none;
+}
+
+
+
+/* ---------------- INTRO SPLASH PAGE ---------------- */
 
 .intro {
   height: 100vh;
@@ -37,15 +49,17 @@ html {
   text-shadow: 4px 4px 0px #f60ccc, -4px -4px 0px #05ffff;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 650px) {
   .title {
-    font-size: 14vw;
-    line-height: 14vw;
+    font-size: 18vw;
+    line-height: 20vw;
     letter-spacing: 6px;
     text-shadow: 4px 4px 0px #f60ccc, -4px -4px 0px #05ffff;
     padding: 0px 24px;
   }
+}
 
+@media only screen and (max-width: 850px) {
   .month {
     font-size: 12vw;
     line-height: 12vw;
@@ -62,7 +76,7 @@ html {
 
 @media only screen and (max-width: 425px) {
   .month, .title {
-    text-shadow: 2px 2px 0px #f60ccc, -2px -2px 0px #05ffff;
+    text-shadow: 3px 3px 0px #f60ccc, -2px -2px 0px #05ffff;
   }
 }
 
@@ -71,7 +85,7 @@ html {
 }
 
 .dark .month, .dark .title {
-    color: #000;
+  color: #000;
 }
 
 .chapter {
@@ -106,17 +120,16 @@ html {
 
 .light .chapter {
   color: #883030;
-  text-shadow: 1px 0px #883030;
+  text-shadow: 0.5px 0px #883030;
 }
 
 .dark .chapter {
   color: #05ffff;
-  text-shadow: 1px 0px #05ffff;
 }
 
 .black .chapter {
   color: #fff;
-  text-shadow: 1px 0px #fff;
+  text-shadow: 0.5px 0px #fff;
 }
 
 .subtitle {
@@ -136,7 +149,7 @@ html {
     font-size: 5.5vw;
     line-height: 9vw;
     letter-spacing: 4px;
-    padding: 24px 16px;
+    padding: 32px 16px 0px;
   }
 }
 
@@ -146,8 +159,14 @@ html {
 }
 
 .dark .subtitle {
+  padding: 36px 8%;
   color: #05ffff;
-  text-shadow: 0.5px 0px #05ffff;
+}
+
+@media only screen and (max-width: 650px) {
+  .dark .subtitle {
+    padding: 32px 15% 0px;
+  }
 }
 
 .black .subtitle {
@@ -155,9 +174,9 @@ html {
 }
 
 .bottom {
-   height: 40vh;
-   display: flex;
-   justify-content: center;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
 }
 
 .scrollup {
@@ -191,12 +210,36 @@ html {
 @keyframes MoveUpDown {
   0%, 100% {
     bottom: 20px;
-    }
+  }
 
   60% {
     bottom: 100px;
-    }
+  }
 }
+
+.follow .text  {
+  font-size: inherit;
+  line-height: inherit;
+  text-align: center;
+  width: 100%;
+  padding-top: 24px;
+}
+
+.light .follow .text {
+  color: #f60ccc;
+}
+
+.dark .follow .text, {
+  color:#05ffff;
+}
+
+.black .follow .text, {
+  color: #fff;
+}
+
+/* ---------------- CHIT CHAT ---------------- */
+
+
 
 #part1 {
   display: block;
@@ -216,7 +259,7 @@ html {
 
 
 .light .speech {
-    background-image: linear-gradient(to right, #f5f5cb, #f9c8c8);
+  background-image: linear-gradient(to right, #f5f5cb, #f9c8c8);
 }
 
 .light .sms {
@@ -228,47 +271,48 @@ html {
 }
 
 .dark .speech {
-    background-image: linear-gradient(to right, #390833, #072e46);
+  background-image: linear-gradient(to right, #41003f, #030d47);
 }
 
 .dark .sms {
-  background-image: linear-gradient(to right,#2d162a, #203039);
+  background-image: linear-gradient(to right, #370020, #160042);
 }
 
 .dark .mail {
-  background-image: linear-gradient(to right,#46053e, #072e46);
+  background-image: linear-gradient(to right, #46053e, #072e46);
 }
 
 .black .speech {
-  background-color: #000;
+  background-image: linear-gradient(to right,#000, #000);
 }
 
 .black .sms {
-  background-color: #000;
+  background-image: linear-gradient(to right,#000, #000);
 }
 
 .black .mail {
-  background-color: #000;
+  background-image: linear-gradient(to right,#000, #000);
+}
+
+.dark.alternate .speech {
+  background-image: linear-gradient(to right, #4b0342, #000e58);
+}
+
+.dark.alternate .sms {
+  background-image: linear-gradient(to right, #58004d, #000e58);
+}
+
+.dark.alternate .mail {
+  background-image: linear-gradient(to right, #58004d, #000e58);
 }
 
 
 .header {
+  background-image: inherit;
   display: block;
   position: sticky;
   top: 0;
   z-index: 1;
-}
-
-.light .speech .header {
-  background-image: linear-gradient(to right, #f5f5cb, #f9c8c8);
-}
-
-.dark .speech .header {
-  background-image: linear-gradient(to right, #390833, #072e46);
-}
-
-.black .header {
-  background-color: #000;
 }
 
 .container {
@@ -326,24 +370,6 @@ html {
   border-top: none;
   box-sizing: border-box;
   padding: 24px 0px;
-}
-
-
-.light .sms .calendar {
-  background-image: linear-gradient(to right, #f1e4bc, #ecbaba);
-}
-
-.dark .sms .calendar {
-  background-image: linear-gradient(to right, #2d162a, #203039);
-}
-
-.light .sms .header {
-  background-image: linear-gradient(to right, #f1e4bc, #ecbaba);
-}
-
-.dark .sms .header {
-  background-image: linear-gradient(to right,#2d162a, #203039);
-
 }
 
 .sms .header .container {
@@ -420,7 +446,7 @@ html {
   background-color: #fff;
   border-radius: 50px;
   padding: 12px 24px;
-  margin: 16px 16px;
+  margin: 32px 16px;
   box-shadow: 0px 1px 3px 0px rgba(149, 110, 143, 0.3);
 }
 
@@ -639,7 +665,7 @@ html {
   background-color: #fff;
   border-radius: 50px;
   padding: 12px 24px;
-  margin: 16px 16px;
+  margin: 32px 16px;
   box-shadow: 0px 1px 3px 0px rgba(149, 110, 143, 0.3);
 }
 
@@ -724,15 +750,6 @@ html {
   display:none;
 }
 
-
-.light .mail .header {
-  background-image: linear-gradient(to right, #fad7b1, #fbafaf);
-}
-
-.dark .mail .header {
-    background-image: linear-gradient(to right, #46053e, #072e46);
-}
-
 .mail .container {
   box-sizing: border-box;;
   background-color: #fff;
@@ -741,9 +758,9 @@ html {
 }
 
 @media only screen and (max-width: 425px) {
- .mail .container {
-   padding: 8px 16px 24px 16px;
- }
+  .mail .container {
+    padding: 8px 16px 24px 16px;
+  }
 }
 
 .header .container {
@@ -828,6 +845,20 @@ html {
 
 /* ---------------- BUTTON ---------------- */
 
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.special .icon {
+font-size: inherit;
+position: relative;
+color: #fff;
+padding-left: 4px;
+}
+
+
 .choose .text  {
   text-align: center;
   width: 100%;
@@ -846,12 +877,6 @@ html {
 .higher16 {
   position: relative;
   top: -16px;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  margin: auto;
 }
 
 .button > .text  {
@@ -880,7 +905,7 @@ html {
 }
 
 @media only screen and (max-width: 425px) {
-   .black .special.text {
+  .black .special.text {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1px;
@@ -919,7 +944,7 @@ html {
 }
 
 .black .continue {
-    box-shadow: 0px 0px 16px 4px rgba(78, 37, 217, 1);
+  box-shadow: 0px 0px 16px 4px rgba(78, 37, 217, 1);
 }
 
 .continue:hover {
