@@ -453,7 +453,7 @@ html {
 .frankie {
   display: block;
   text-align: right;
-  padding: 8px 4px;
+  padding: 24px 4px;
 }
 
 .frankie .text {
@@ -463,7 +463,7 @@ html {
 .her, .father, .generic {
   display: block;
   text-align: left;
-  padding: 8px 4px;
+  padding: 24px 4px;
 }
 
 .her .text {
