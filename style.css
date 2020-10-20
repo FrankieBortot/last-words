@@ -23,7 +23,6 @@ html {
 }
 
 
-
 /* ---------------- INTRO SPLASH PAGE ---------------- */
 
 .intro {
@@ -32,6 +31,10 @@ html {
 
 .double.intro {
   height: 200vh;
+}
+
+.finale {
+  background-color: #000;
 }
 
 .top {
