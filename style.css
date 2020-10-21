@@ -22,6 +22,9 @@ html {
   display: none;
 }
 
+.show {
+  display: block;
+}
 
 /* ---------------- INTRO SPLASH PAGE ---------------- */
 
@@ -443,7 +446,7 @@ html {
   font-weight: 400;
 }
 
-.skip, .ringtone {
+.skip, .ringtone, .narrator {
   text-align: center;
   padding: 24px 0px;
 }
@@ -496,6 +499,10 @@ html {
   color: #fff;
 }
 
+.narrator .text {
+  color: #fff;
+}
+
 .text {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
@@ -542,13 +549,13 @@ html {
   margin-left: 12px;
 }
 
-.speech .generic .balloon {
+.speech .generic .balloon, .speech .narrator .balloon {
   background-color: #000;
   border-radius: 24px;
 }
 
 @media only screen and (max-width: 425px) {
-  .speech .generic .balloon {
+  .speech .generic .balloon, .speech .narrator .balloon  {
     border-radius: 20px;
   }
 }
@@ -870,10 +877,10 @@ html {
 }
 
 .special .icon {
-font-size: inherit;
-position: relative;
-color: #fff;
-padding-left: 4px;
+  font-size: inherit;
+  position: relative;
+  color: #fff;
+  padding-left: 4px;
 }
 
 
