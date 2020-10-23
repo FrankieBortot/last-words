@@ -12,6 +12,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/872aea0a36.js" crossorigin="anonymous"></script>
+  <script>
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous">
+  </script>
   <script src="script.js"></script>
 
   <title>LAST WORDS · Una storia nota
@@ -21,7 +26,7 @@
 
 <body class="black">
 
-  <section class="finale">
+  <!-- <section class="finale">
 
     <div class="top">
 
@@ -208,8 +213,59 @@
     </div>
 
     <div class="button higher16">
-      <a href="B-agosto.html" class="special text">
+      <a class="special text" onclick='reveal("part2")' href="#part2" >
         Vai avanti
+      </a>
+    </div>
+
+  </section> -->
+
+  <section class="mail" id="part1">
+
+    Sicuramente c'è una persona a cui vorresti parlare per un'ultima volta.
+    Forse è una persona con cui, per un motivo o per un altro, non hai più possibilità di entrare in contatto.
+    Be', oggi è il tuo giorno fortunato: potrai mandarle una e-mail.
+
+    Avrai anche la possibilità di lasciare il tuo indirizzo personale e, chi lo sa, magari riceverai una risposta inaspettata.
+
+    Non temere: non riceverai spam nè messaggi promozionali (d'altronde questa è solo una storia, non una vetrina pubblicitaria).
+
+    Scegli bene le tue ultime parole.
+
+    <div class="header">
+
+        <div class="container" id="form">
+
+            <div class="data">
+              <div class="label">
+                Mittente
+              </div>
+            <input placeholder="Inserisci la tua mail" id="input-mail" type="text" class="insert-address" name="emailaddress">
+            </div>
+
+              <div class="data">
+                <div class="label">
+                  Oggetto
+                </div>
+
+                <div class="object">
+                  Un'ultima cosa
+                </div>
+              </div>
+                <div class="divider"></div>
+          </div>
+
+    </div>
+
+    <div class="container">
+      <div class="text">
+        <input placeholder="Scrivi un messaggio" id="input-mail" type="text" class="insert-text" name="emailtext">
+      </div>
+    </div>
+
+    <div class="button">
+      <a onclick="subform()" class="special text">
+        Invia
       </a>
     </div>
 

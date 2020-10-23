@@ -859,7 +859,7 @@ html {
   padding: 0px 0px 0px 4px;
 }
 
-.mail .text {
+.mail .text, .mail .insert-text {
   color: #383838;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
