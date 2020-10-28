@@ -17,7 +17,23 @@
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous">
   </script>
-  <script src="script.js"></script>
+  <script>
+
+  function SubForm(){
+      $.ajax({
+          url:'https://api.apispreadsheets.com/data/2414/',
+          type:'post',
+          data:$("#myform").serializeArray(),
+          success: function(){
+            alert("Form Data Submitted :)")
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+      });
+  }
+
+  </script>
 
   <title>LAST WORDS · Una storia nota
   </title>
@@ -221,27 +237,31 @@
   </section> -->
 
   <section class="mail" id="part1">
+<div class="text" style="color: #fff;">
+  Sicuramente c'è una persona a cui vorresti parlare per un'ultima volta.
+  Forse è una persona con cui, per un motivo o per un altro, non hai più possibilità di entrare in contatto.
+  Be', oggi è il tuo giorno fortunato: potrai mandarle una e-mail.
 
-    Sicuramente c'è una persona a cui vorresti parlare per un'ultima volta.
-    Forse è una persona con cui, per un motivo o per un altro, non hai più possibilità di entrare in contatto.
-    Be', oggi è il tuo giorno fortunato: potrai mandarle una e-mail.
+  Avrai anche la possibilità di lasciare il tuo indirizzo personale e, chi lo sa, magari riceverai una risposta inaspettata.
 
-    Avrai anche la possibilità di lasciare il tuo indirizzo personale e, chi lo sa, magari riceverai una risposta inaspettata.
+  Non temere: non riceverai spam nè messaggi promozionali (d'altronde questa è solo una storia, non una vetrina pubblicitaria).
 
-    Non temere: non riceverai spam nè messaggi promozionali (d'altronde questa è solo una storia, non una vetrina pubblicitaria).
+  Scegli bene le tue ultime parole.
 
-    Scegli bene le tue ultime parole.
+</div>
 
-    <div class="header">
 
-        <div class="container" id="form">
 
-            <div class="data">
-              <div class="label">
+    <div class="header" >
+
+        <div class="container" >
+
+            <form class="data" id="myForm">
+              <label class="label">
                 Mittente
-              </div>
-            <input placeholder="Inserisci la tua mail" id="input-mail" type="text" class="insert-address" name="emailaddress">
-            </div>
+              </label>
+            <input placeholder="Inserisci la tua mail" id="emailaddress" type="text" class="insert-address" name="emailaddress">
+          </form>
 
               <div class="data">
                 <div class="label">
@@ -256,17 +276,18 @@
           </div>
 
     </div>
+  </form>
 
     <div class="container">
       <div class="text">
-        <input placeholder="Scrivi un messaggio" id="input-mail" type="text" class="insert-text" name="emailtext">
+        <input placeholder="Scrivi un messaggio" id="emailtext" type="text" class="insert-text" name="emailtext">
       </div>
     </div>
 
     <div class="button">
-      <a onclick="subform()" class="special text">
+      <button onclick="SubForm()" class="special text">
         Invia
-      </a>
+      </button>
     </div>
 
   </section>
