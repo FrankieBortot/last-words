@@ -439,7 +439,15 @@ html {
   width: 8px;
   border-radius: 10px;
   background-color: #30c840;
-  margin: 0px 4px;
+  margin: 0px 8px 0px 4px;
+}
+
+.sms .header .status .pin.offline {
+  height: 8px;
+  width: 8px;
+  border-radius: 10px;
+  background-color: #818181;
+  margin: 0px 8px 0px 4px;
 }
 
 .sms .header .status .text {
