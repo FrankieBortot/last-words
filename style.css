@@ -248,6 +248,87 @@ html {
   color: #fff;
 }
 
+/* ------------------- ANIMAZIONE BATTITO CUORE-------------------*/
+
+
+.anim {
+  width: 95vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 425px) {
+  .anim {
+    viewBox="110 0 658.95 216.1";
+  }
+}
+
+.heart {
+  position:absolute;
+  top: 0;
+
+  overflow: hidden;
+}
+
+.heartrate {
+  stroke-dasharray: 1600;
+  -webkit-animation: heart 4.5s linear infinite;
+}
+
+.fade {
+  animation: fadeOut ease 4.5s infinite;
+}
+
+.glow {
+  filter: drop-shadow( 0px 0px 4px #05ffff)
+
+          drop-shadow( 0px 0px 12px #05ffff);
+}
+
+@-webkit-keyframes heart {
+  0% {
+    stroke-dashoffset: 1600;
+  }
+
+  30% {
+    stroke-dashoffset: 1310;
+  }
+
+  33% {
+    stroke-dashoffset: 870;
+  }
+
+  67% {
+    stroke-dashoffset: 570;
+  }
+
+  70% {
+    stroke-dashoffset: 130;
+  }
+
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:0;
+  }
+
+  10% {
+    opacity:1;
+  }
+
+  80% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
 /* ---------------- CHIT CHAT ---------------- */
 
 
