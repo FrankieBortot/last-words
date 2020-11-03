@@ -276,7 +276,7 @@ html {
   width: 900;
   height: 220;
   fill: none;
-  stroke: #77f2c4;
+  stroke:url(#heartstroke);
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-width: 3;
