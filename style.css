@@ -251,32 +251,51 @@ html {
 /* ------------------- ANIMAZIONE BATTITO CUORE-------------------*/
 
 
-.anim {
-  width: 95vw;
-  height: 100vh;
-  z-index: -1;
-}
-
-@media only screen and (max-width: 425px) {
-  .anim {
-    viewBox="110 0 658.95 216.1";
-  }
-}
-
-.heart {
-  position:absolute;
-  top: 0;
-
+.heart-anim {
   overflow: hidden;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.anim {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 450px) {
+  .anim {
+    width: 200vw;
+    margin-left: -50%;
+  }
 }
 
 .heartrate {
   stroke-dasharray: 1600;
-  -webkit-animation: heart 4.5s linear infinite;
+  animation: heart 4.5s linear infinite;
+  width: 900;
+  height: 220;
+  fill: none;
+  stroke: #77f2c4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 3;
+}
+
+@media only screen and (max-width: 450px) {
+  .heartrate {
+  animation: heart 3.5s linear infinite;
+  stroke-width: 4;
+  }
 }
 
 .fade {
   animation: fadeOut ease 4.5s infinite;
+}
+
+@media only screen and (max-width: 450px) {
+  .fade {
+    animation: fadeOut ease 3.5s infinite;
+  }
 }
 
 .glow {
@@ -290,22 +309,13 @@ html {
     stroke-dashoffset: 1600;
   }
 
-  30% {
-    stroke-dashoffset: 1310;
+  48% {
+    stroke-dashoffset: 1175;
   }
 
-  33% {
-    stroke-dashoffset: 870;
+  51% {
+    stroke-dashoffset: 730;
   }
-
-  67% {
-    stroke-dashoffset: 570;
-  }
-
-  70% {
-    stroke-dashoffset: 130;
-  }
-
 
   100% {
     stroke-dashoffset: 0;
