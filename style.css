@@ -91,7 +91,7 @@ html {
 
 @media only screen and (max-width: 425px) {
   .month, .title {
-    text-shadow: 3px 3px 0px #f60ccc, -2px -2px 0px #05ffff;
+    text-shadow: 2px 2px 0px #f60ccc, -2px -2px 0px #05ffff;
   }
 }
 
