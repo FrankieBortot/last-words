@@ -36,6 +36,10 @@ html {
   height: 200vh;
 }
 
+.heart.intro {
+  height: 150vh;
+}
+
 .finale {
   background-color: #000;
 }
@@ -260,7 +264,7 @@ html {
 .anim {
   width: 100vw;
   height: 100vh;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 @media only screen and (max-width: 450px) {
@@ -272,52 +276,83 @@ html {
 
 .heartrate {
   stroke-dasharray: 1600;
-  animation: heart 4.5s linear infinite;
+  animation: alive 3.5s linear infinite;
   width: 900;
   height: 220;
   fill: none;
   stroke:url(#heartstroke);
   stroke-linejoin: round;
   stroke-linecap: round;
-  stroke-width: 3;
+  stroke-width: 4;
 }
 
 @media only screen and (max-width: 450px) {
   .heartrate {
-  animation: heart 3.5s linear infinite;
+  animation: alive 3s linear infinite;
+  stroke-width: 5;
+  }
+}
+
+.deadline {
+  stroke-dasharray: 1600;
+  animation: dead 3.5s linear infinite;
+  width: 900;
+  height: 220;
+  fill: none;
+  stroke:url(#heartstroke);
+  stroke-linejoin: round;
+  stroke-linecap: round;
   stroke-width: 4;
+}
+
+@media only screen and (max-width: 450px) {
+  .deadline {
+    animation: dead 2.5s linear infinite;
+    stroke-width: 5;
   }
 }
 
 .fade {
-  animation: fadeOut ease 4.5s infinite;
+  animation: fadeOut linear 3.5s infinite;
 }
 
 @media only screen and (max-width: 450px) {
   .fade {
-    animation: fadeOut ease 3.5s infinite;
+    animation: fadeOut linear 2.5s infinite;
   }
 }
 
 .glow {
-  filter: drop-shadow( 0px 0px 8px #05ffff);
-}
-
-.glow2 {
   filter: drop-shadow( 0px 0px 4px #05ffff);
 }
 
-@-webkit-keyframes heart {
+.glow2 {
+  filter: drop-shadow( 0px 0px 16px #05ffff);
+}
+
+
+
+@keyframes alive {
   0% {
     stroke-dashoffset: 1600;
   }
 
-  48% {
+  49% {
     stroke-dashoffset: 1175;
   }
 
   51% {
     stroke-dashoffset: 730;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dead {
+  0% {
+    stroke-dashoffset: 1600;
   }
 
   100% {
@@ -337,6 +372,7 @@ html {
   80% {
     opacity:1;
   }
+
   100% {
     opacity:0;
   }
