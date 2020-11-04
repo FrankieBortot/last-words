@@ -302,13 +302,13 @@ html {
   stroke:url(#heartstroke);
   stroke-linejoin: round;
   stroke-linecap: round;
-  stroke-width: 4;
+  stroke-width: 3;
 }
 
 @media only screen and (max-width: 450px) {
   .deadline {
     animation: dead 2.5s linear infinite;
-    stroke-width: 5;
+    stroke-width: 4;
   }
 }
 
@@ -447,7 +447,6 @@ html {
   background-image: linear-gradient(to right, #58004d, #000e58);
 }
 
-
 .header {
   background-image: inherit;
   display: block;
@@ -498,7 +497,6 @@ html {
 
 .black .calendar {
   color: #fff;
-  text-shadow: 1px 0px #fff;
 }
 
 .speech .container {
