@@ -956,6 +956,7 @@ html {
 }
 
 .mail .data .label {
+  display: block;
   color: rgba(0, 0, 0, 0.5);
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -971,18 +972,6 @@ html {
   font-size: 18px;
   line-height: 24px;
   padding: 4px 0px 4px 8px ;
-}
-
-.mail .data .insert-address {
-  color: #02004F;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-  padding: 4px 0px 4px 16px ;
-  margin: 4px -4px;
-  border-radius: 50px;
-  border: 2px solid #02004F;
 }
 
 .mail .data .object {
@@ -1010,7 +999,7 @@ html {
   padding: 0px 0px 0px 4px;
 }
 
-.mail .text, .mail .insert-text {
+.mail .text {
   color: #383838;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -1128,6 +1117,7 @@ html {
 }
 
 .continue:active {
+  outline: none;
   color: #00278A;
   letter-spacing: 2px;
   font-weight: 600;
@@ -1147,6 +1137,7 @@ html {
 }
 
 .special:active  {
+  outline: none;
   color: #6b006e;
   letter-spacing: 2px;
   font-weight: 600;
@@ -1154,4 +1145,43 @@ html {
   padding: 18px 34px;
   border: 2px solid #6b006e;
   box-shadow: none;
+}
+
+/* --------------------FINAL MESSAGE--------------------- */
+
+.mail .data .insert-address {
+  color: #02004F;
+  max-width: 400px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 4px 16px 4px 16px ;
+  margin: 4px -4px;
+  border-radius: 50px;
+  border: 2px solid #02004F;
+}
+
+.mail .data .insert-address:focus {
+  padding: 6px 16px 6px;
+  background: #dedefb;
+  border: none;
+}
+
+.mail .insert-text {
+  color: #383838;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  text-align: left;
+}
+
+input {
+  outline: none;
+  width: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+  input {
+    width: 100%;
+  }
 }

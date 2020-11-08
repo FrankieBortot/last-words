@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,44 +11,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <script src="https://kit.fontawesome.com/872aea0a36.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/872aea0a36.js" crossorigin="anonymous">
+  </script>
 
+  <!-- ______________FORM___________________ -->
 
-<!-- ______________AOS___________________ -->
-
-  <script>
-  AOS.init();
-</script>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<!-- ______________FORM___________________ -->
-
-  <script>
+  <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous">
   </script>
 
-  <script>
+  <!-- _________________________________ -->
 
-  function SubForm(){
-      $.ajax({
-          url:'https://api.apispreadsheets.com/data/2414/',
-          type:'post',
-          data:$("#myform").serializeArray(),
-          success: function(){
-            alert("Form Data Submitted :)")
-          },
-          error: function(){
-            alert("There was an error :(")
-          }
-      });
-  }
-
+  <script src="script.js">
   </script>
 
   <title>LAST WORDS · Una storia nota
@@ -55,9 +34,9 @@
 
 </head>
 
-<body class="black">
+<body class="dark">
 
-  <section class="finale">
+  <!-- <section class="finale">
 
     <div class="top">
 
@@ -249,60 +228,79 @@
       </a>
     </div>
 
-  </section>
+  </section> -->
+
+<section class="speech" id="part">
+  <div class="container">
+    <div class="text" style="color: #fff;">
+      Sicuramente c'è una persona a cui vorresti parlare per un'ultima volta.
+      Forse è una persona con cui, per un motivo o per un altro, non hai più possibilità di entrare in contatto.
+      Be', oggi è il tuo giorno fortunato: potrai mandarle una e-mail.
+
+      Avrai anche la possibilità di lasciare il tuo indirizzo personale e, chi lo sa, magari riceverai una risposta inaspettata.
+
+      Non temere: non riceverai spam nè messaggi promozionali (d'altronde questa è solo una storia, non una vetrina pubblicitaria).
+
+      Scegli bene le tue ultime parole.
+
+    </div>
+  </div>
+</section>
 
   <section class="mail" id="part1">
-<div class="text" style="color: #fff;">
-  Sicuramente c'è una persona a cui vorresti parlare per un'ultima volta.
-  Forse è una persona con cui, per un motivo o per un altro, non hai più possibilità di entrare in contatto.
-  Be', oggi è il tuo giorno fortunato: potrai mandarle una e-mail.
-
-  Avrai anche la possibilità di lasciare il tuo indirizzo personale e, chi lo sa, magari riceverai una risposta inaspettata.
-
-  Non temere: non riceverai spam nè messaggi promozionali (d'altronde questa è solo una storia, non una vetrina pubblicitaria).
-
-  Scegli bene le tue ultime parole.
-
-</div>
 
 
 
-    <div class="header" >
+    <form id="myForm">
+      <div class="header">
 
         <div class="container" >
 
-            <form class="data" id="myForm">
-              <label class="label">
-                Mittente
-              </label>
-            <input placeholder="Inserisci la tua mail" id="emailaddress" type="text" class="insert-address" name="emailaddress">
-          </form>
+          <div class="data">
 
-              <div class="data">
-                <div class="label">
-                  Oggetto
-                </div>
+            <label class="label">
+              Mittente
+            </label>
+            <input id="address" placeholder="Inserisci la tua email" class="insert-address" name="address"/>
 
-                <div class="object">
-                  Un'ultima cosa
-                </div>
-              </div>
-                <div class="divider"></div>
           </div>
+          <div class="data">
+            <div class="label">
+              Oggetto
+            </div>
 
-    </div>
-  </form>
+            <div class="object">
+              Un'ultima cosa
+            </div>
+          </div>
+          <div class="divider"></div>
 
-    <div class="container">
-      <div class="text">
-        <input placeholder="Scrivi un messaggio" id="emailtext" type="text" class="insert-text" name="emailtext">
+        </div>
+
+      </div>
+
+
+
+      <div class="container">
+
+          <input placeholder="Scrivi un messaggio" id="message" class="insert-text" name="message"/>
+
+      </div>
+
+    </form>
+
+    <div class="button">
+      <div onclick="SubForm()" class="special text">
+        Invia il tuo messaggio
       </div>
     </div>
 
-    <div class="button">
-      <button onclick="SubForm()" class="special text">
-        Invia
-      </button>
+    <div id="success" style="display:none; background-color: #fff">
+      SUCCESS
+    </div>
+
+    <div id="error" style="display:none; background-color: #fff">
+      FAIL
     </div>
 
   </section>
