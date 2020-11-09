@@ -1149,6 +1149,10 @@ html {
   box-shadow: none;
 }
 
+button {
+  outline-style: none;
+}
+
 /* --------------------FINAL MESSAGE--------------------- */
 
 .mail .data .insert-address {
