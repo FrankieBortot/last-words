@@ -15,7 +15,7 @@ html {
 }
 
 .black .intro {
-  background-color: #000;
+  background-image: linear-gradient(45deg, #000, #000);
 }
 
 .hide {
@@ -210,6 +210,15 @@ html {
   fill: #fff;
 }
 
+@media only screen and (max-width: 650px) {
+  .scrollup .icon {
+  font-size: 18px;
+  position: relative;
+  animation: MoveUpDown 2.5s ease infinite;
+  fill: #fff;
+  }
+}
+
 .light .icon {
   color: #f60ccc;
 }
@@ -288,7 +297,7 @@ html {
 
 @media only screen and (max-width: 450px) {
   .heartrate {
-  animation: alive 3s linear infinite;
+  animation: alive 2.5s linear infinite;
   stroke-width: 5;
   }
 }
@@ -453,6 +462,10 @@ html {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.black .header {
+  top: -1;
 }
 
 .container {
@@ -1065,14 +1078,14 @@ html {
   border-radius: 50px;
 }
 
-.black .special.text {
+.choice.text {
   padding: 18px 34px;
   border: 2px solid white;
   box-shadow: 0px 0px 16px 4px rgba(255, 179, 222, 0.7);
 }
 
 @media only screen and (max-width: 425px) {
-  .black .special.text {
+  .choice.text {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1px;
@@ -1080,7 +1093,7 @@ html {
   }
 }
 
-.black .special:hover {
+.choice:hover {
   box-shadow: none;
 }
 
@@ -1103,14 +1116,13 @@ html {
 .continue {
   background-image: linear-gradient(-45deg, #8a09fc, #0047bf);
   box-shadow: 0px 0px 16px 4px rgba(0, 61, 195, 0.62);
-
 }
 
 .light .continue {
   box-shadow: 0px 0px 16px 4px rgba(3, 58, 255, 0.5);
 }
 
-.black .continue {
+.black .continue, .choice {
   box-shadow: 0px 0px 16px 4px rgba(78, 37, 217, 1);
 }
 
@@ -1129,7 +1141,7 @@ html {
   box-shadow: none;
 }
 
-.special  {
+.special, .choice  {
   background-image: linear-gradient(-45deg, #e000ca, #e9004c);
   box-shadow: 0px 0px 16px 4px rgba(249, 35, 144, 0.5);
 }
@@ -1191,6 +1203,7 @@ button {
 .mail .insert-message {
   display: block;
   box-sizing: border-box;
+  height: 120px;
   color: #02004F;
   background-image: linear-gradient(to right, #fcc6c6, #f9dbf4);
   font-family: 'Raleway', sans-serif;
@@ -1202,9 +1215,9 @@ button {
   border-radius: 4px;
   border: none;
   border-bottom: 2px solid #6222c4;
-  /* border-left: 2px solid transparent;
+  border-left: 2px solid transparent;
   border-top: 2px solid transparent;
-  border-right: 2px solid transparent; */
+  border-right: 2px solid transparent;
 }
 
 .mail .insert-message::placeholder {
@@ -1225,8 +1238,8 @@ input {
   width: 100%;
 }
 
-@media only screen and (max-width: 425px) {
-  input {
-
-  }
+textarea {
+  outline: none;
+  width: 100%;
+  resize: none;
 }

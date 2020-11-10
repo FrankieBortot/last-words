@@ -16,6 +16,8 @@
   <script src="https://kit.fontawesome.com/872aea0a36.js" crossorigin="anonymous">
   </script>
 
+
+
   <!-- ______________FORM___________________ -->
 
   <script
@@ -26,7 +28,10 @@
 
   <!-- _________________________________ -->
 
-  <script src="script.js">
+  <script src="script.js"></script>
+  <script src="autoresize.jquery.js"></script>
+  <script>
+    $('textarea').autoResize();
   </script>
 
   <title>LAST WORDS · Una storia nota
@@ -34,9 +39,9 @@
 
 </head>
 
-<body class="dark">
+<body class="black">
 
-  <!-- <section class="finale">
+  <section class="finale">
 
     <div class="top">
 
@@ -228,24 +233,24 @@
       </a>
     </div>
 
-  </section> -->
+  </section>
 
-<section class="speech" id="part">
-  <div class="container">
-    <div class="text" style="color: #fff;">
-      Sicuramente c'è una persona a cui vorresti parlare per un'ultima volta.
-      Forse è una persona con cui, per un motivo o per un altro, non hai più possibilità di entrare in contatto.
-      Be', oggi è il tuo giorno fortunato: potrai mandarle una e-mail.
+  <section class="speech" style="display:block;">
+    <div class="container">
+      <div class="text" style="color: #fff;">
+        Sicuramente c'è una persona a cui vorresti parlare per un'ultima volta.
+        Forse è una persona con cui, per un motivo o per un altro, non hai più possibilità di entrare in contatto.
+        Be', oggi è il tuo giorno fortunato: potrai mandarle una e-mail.
 
-      Avrai anche la possibilità di lasciare il tuo indirizzo personale e, chi lo sa, magari riceverai una risposta inaspettata.
+        Avrai anche la possibilità di lasciare il tuo indirizzo personale e, chi lo sa, magari riceverai una risposta inaspettata.
 
-      Non temere: non riceverai spam nè messaggi promozionali (d'altronde questa è solo una storia, non una vetrina pubblicitaria).
+        Non temere: non riceverai spam nè messaggi promozionali (d'altronde questa è solo una storia, non una vetrina pubblicitaria).
 
-      Scegli bene le tue ultime parole.
+        Scegli bene le tue ultime parole.
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section class="mail" id="part1">
 
@@ -261,7 +266,7 @@
             <label class="label">
               Mittente
             </label>
-            <input id="address" placeholder="Inserisci la tua email (se vuoi)" class="insert-address" name="address"/>
+            <input id="address" placeholder="Puoi inserire la tua email" class="insert-address" type="email" name="address"/>
 
           </div>
           <div class="data">
@@ -274,24 +279,21 @@
             </div>
           </div>
           <div class="divider"></div>
-
         </div>
-
       </div>
-
-
 
       <div class="container">
 
-          <input placeholder="Scrivi un messaggio" id="message" class="insert-message" name="message"/>
-
+        <div id="inputWrapper">
+          <textarea placeholder="Qui puoi scrivere il messaggio" id="message" class="insert-message" name="message" /> </textarea>
+        </div>
       </div>
 
     </form>
 
     <div class="button">
-      <div onclick="SubForm()" class="special text">
-        Invia il tuo messaggio
+      <div onclick="SubForm(), waiting()" class="continue text" id="final-button">
+        Non ho niente da dire
       </div>
     </div>
 
