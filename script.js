@@ -10,8 +10,7 @@ function SubForm() {
     type:'post',
     data:$("#myForm").serializeArray(),
     success: function(){
-      document.getElementById("success").style.display = "block",
-      window.location.href = "https://frankiebortot.github.io/last-words/credits.html";
+      document.getElementById("success").style.display = "block"
     },
     error: function(){
       document.getElementById("error").style.display = "block"
@@ -37,6 +36,10 @@ $(document).ready(function() {
 
 function waiting() {
   document.getElementById('final-button').innerHTML = 'invio in corso...';
+}
+
+function credits() {
+  window.open("https://frankiebortot.github.io/last-words/credits.html")
 }
 
 
