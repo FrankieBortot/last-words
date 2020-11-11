@@ -11,6 +11,7 @@ function SubForm() {
     data:$("#myForm").serializeArray(),
     success: function(){
       document.getElementById("success").style.display = "block",
+      window.location.href = "/credits.html"
     },
     error: function(){
       document.getElementById("error").style.display = "block"
