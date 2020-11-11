@@ -38,9 +38,9 @@ function waiting() {
   document.getElementById('final-button').innerHTML = 'invio in corso...';
 }
 
-// function credits() {
-//   window.location.href = "credits.html"
-// }
+function credits() {
+  window.location.href = "credits.html"
+}
 
 
 function changetheme() {
