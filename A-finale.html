@@ -38,9 +38,6 @@
 
     <div class="top">
 
-      <div class="title">
-      </div>
-
       <div class="subtitle">
 
         Siamo arrivati fino a qui
@@ -54,9 +51,6 @@
     </div>
 
     <div class="top">
-
-      <div class="title">
-      </div>
 
       <div class="subtitle">
 
@@ -72,9 +66,6 @@
 
     <div class="top">
 
-      <div class="title">
-      </div>
-
       <div class="subtitle">
 
         avresti voluto fare qualcosa di diverso
@@ -89,10 +80,7 @@
 
     <div class="top">
 
-      <div class="title">
-      </div>
-
-      <div class="subtitle">
+      <div class="subtitle glitch">
 
         vero?
 
@@ -104,10 +92,9 @@
 
     </div>
 
-
     <div class="top" style="justify-content: center;">
 
-      <div class="title" >
+      <div class="title">
         Last words
       </div>
 
@@ -117,8 +104,6 @@
       <div class="scrollup">
 
         <div class="icon">
-
-
         </div>
 
       </div>
@@ -137,34 +122,6 @@
     </div>
 
     <div class="container">
-
-      <div class="frankie">
-        <div class="balloon">
-          <div class="text">
-            Se soltanto potessi tornare indietro...
-          </div>
-        </div>
-      </div>
-
-      <div class="generic">
-        <div class="balloon orange">
-          <div class="text">
-            Saresti andato da lei
-          </div>
-        </div> <br>
-
-        <div class="balloon orange">
-          <div class="text">
-            Avresti sistemato tutto
-          </div>
-        </div> <br>
-
-        <div class="balloon orange">
-          <div class="text">
-            Ora sareste ancora felici insieme
-          </div>
-        </div>
-      </div>
 
       <div class="frankie">
         <div class="balloon">
@@ -215,33 +172,130 @@
     </div>
 
     <div class="button higher16">
-      <a class="choice text" onclick='reveal("part2")' href="#part2" >
+      <a class="choice text" onclick='reveal("part2"), reveal("part3")' href="#part2" >
         Vai avanti
       </a>
     </div>
 
   </section>
 
-  <section class="speech" style="display:block;">
-    <div class="container">
-      <div class="text" style="color: #fff;">
-        Sicuramente c'è una persona a cui vorresti parlare per un'ultima volta.
-        Forse è una persona con cui, per un motivo o per un altro, non hai più possibilità di entrare in contatto.
-        Be', oggi è il tuo giorno fortunato: potrai mandarle una e-mail.
+  <section class="speech ending" id="part2">
 
-        Avrai anche la possibilità di lasciare il tuo indirizzo personale e, chi lo sa, magari riceverai una risposta inaspettata.
+    <div class="top">
 
-        Non temere: non riceverai spam nè messaggi promozionali (d'altronde questa è solo una storia, non una vetrina pubblicitaria).
+      <div class="subtitle">
+
+        Sicuramente c'è una persona a cui vorresti parlare per un'ultima volta
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle">
+
+        Forse è una persona con cui, per un motivo o per un altro, non hai più possibilità di entrare in contatto
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle">
+
+        Be', oggi è il tuo giorno fortunato
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle chance">
+
+        Hai l'occasione per mandarle un ultimo messaggio
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle">
+
+        Avrai anche la possibilità di lasciare il tuo indirizzo personale...
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle">
+
+      ...e chi lo sa, magari riceverai una risposta inaspettata
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle chance">
+
+        Non temere: non riceverai spam nè messaggi promozionali <br><span class="small">(d'altronde questa è solo una storia, non una vetrina pubblicitaria)</span>
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle">
 
         Scegli bene le tue ultime parole.
 
       </div>
+
     </div>
+
+    <div class="bottom">
+
+    </div>
+
   </section>
 
-  <section class="mail" id="part1">
-
-
+  <section class="mail" id="part3">
 
     <form id="myForm">
       <div class="header">
@@ -288,14 +342,6 @@
       <div onclick="SubForm(), waiting()" class="continue text" id="final-button">
         Non ho niente da dire
       </div>
-    </div>
-
-    <div id="success" style="display:none; background-color: #fff">
-      SUCCESS
-    </div>
-
-    <div id="error" style="display:none; background-color: #fff">
-      FAIL
     </div>
 
   </section>

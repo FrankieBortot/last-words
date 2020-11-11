@@ -30,7 +30,7 @@ $(document).ready(function() {
       $('div#final-button').text('Invia il messaggio');
       $('div#final-button').removeClass('continue');
       $('div#final-button').addClass('special');
-      $('div#yousure').text('ok');
+      $('div#yousure').text('💌');
     }
   });
 });
