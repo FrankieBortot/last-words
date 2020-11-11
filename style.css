@@ -241,6 +241,10 @@ html {
   }
 }
 
+.keepscroll {
+  padding: 0px 16px 0px 16px;
+}
+
 .follow .text  {
   font-size: inherit;
   line-height: inherit;
@@ -433,15 +437,15 @@ html {
 }
 
 .black .speech {
-  background-image: linear-gradient(to right,#000, #000);
+  background-image: linear-gradient(to right, #000, #000);
 }
 
 .black .sms {
-  background-image: linear-gradient(to right,#000, #000);
+  background-image: linear-gradient(to right, #000, #000);
 }
 
 .black .mail {
-  background-image: linear-gradient(to right,#000, #000);
+  background-image: linear-gradient(to right, #000, #000);
 }
 
 .dark.alternate .speech {
@@ -462,10 +466,6 @@ html {
   position: sticky;
   top: 0;
   z-index: 1;
-}
-
-.black .header {
-  top: -1;
 }
 
 .container {
@@ -649,6 +649,12 @@ html {
   display: block;
   text-align: left;
   padding: 24px 4px;
+}
+
+@media only screen and (max-width: 425px) {
+  .her, .frankie, .father, .generic {
+    padding: 12px 4px;
+  }
 }
 
 .her .text {
@@ -1038,7 +1044,6 @@ html {
   padding-left: 4px;
 }
 
-
 .choose .text  {
   text-align: center;
   width: 100%;
@@ -1231,6 +1236,10 @@ button {
 .mail .insert-message:focus {
   background: #fff;
   border: 2px solid #6222c4;
+}
+
+.yousure .text {
+  color: #000;
 }
 
 input {

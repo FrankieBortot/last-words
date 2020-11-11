@@ -25,10 +25,12 @@ $(document).ready(function() {
       $('div#final-button').text('Non ho niente da dire');
       $('div#final-button').removeClass('special');
       $('div#final-button').addClass('continue');
+      $('div#yousure').text('Non vuoi scrivere neanche una parola?');
     } else {
-      $('div#final-button').text('Invii il messaggio');
+      $('div#final-button').text('Invia il messaggio');
       $('div#final-button').removeClass('continue');
       $('div#final-button').addClass('special');
+      $('div#yousure').text('ok');
     }
   });
 });
