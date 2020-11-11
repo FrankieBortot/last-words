@@ -39,7 +39,7 @@ function waiting() {
 }
 
 function credits() {
-  window.open("https://frankiebortot.github.io/last-words/credits.html")
+  window.location.href = "credits.html"
 }
 
 
