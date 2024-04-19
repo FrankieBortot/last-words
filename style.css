@@ -61,7 +61,6 @@ html {
 .chapter, .title {
   font-family: 'Nunito', sans-serif;
   font-size: 100px;
-  font-style: italic;
   line-height: 100px;
   font-weight: 900;
   letter-spacing: 12px;
@@ -72,6 +71,7 @@ html {
 
 .title {
   text-transform: uppercase;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 650px) {
